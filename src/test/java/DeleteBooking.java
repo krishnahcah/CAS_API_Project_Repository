@@ -37,7 +37,7 @@ public class DeleteBooking extends BaseTest {
 		//Sending the GET request for a specific booking id and receiving the response
 		AllureLogger.logToAllure("Sending the GET request for a specific booking id and receiving the response");
 		Response response = given().
-				spec(requestSpec).
+				spec(httpRequest).
 				header("Content-Type", "application/json").
 				header("Cookie", cookieValue).
 				pathParam("id", IDtoUpdate).

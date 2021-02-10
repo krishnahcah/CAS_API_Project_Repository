@@ -40,7 +40,7 @@ public class UpdateBooking extends BaseTest {
 		
 		//Update the booking with new first name
 		Response getResponse = given().
-				spec(requestSpec).
+				spec(httpRequest).
 				pathParam("id", IDtoUpdate).
 			when().
 				get("/booking/{id}");
@@ -53,7 +53,7 @@ public class UpdateBooking extends BaseTest {
 		//Sending the PUT request
 		AllureLogger.logToAllure("Sending the PUT request to update the booking detail of booking id : "+IDtoUpdate);
 		Response response = given().
-			spec(requestSpec).
+			spec(httpRequest).
 			header("Content-Type", "application/json").
 			header("Accept", "application/json").
 			header("Cookie", cookieValue).

@@ -40,7 +40,7 @@ public class GetBooking extends BaseTest {
 		//Sending the GET request for a specific booking id and receiving the response
 		AllureLogger.logToAllure("Getting the response for the Booking IDs from test data excel");
 		Response response = given().
-				spec(requestSpec).
+				spec(httpRequest).
 				pathParam("id", ID).
 			when().
 				get("/booking/{id}");

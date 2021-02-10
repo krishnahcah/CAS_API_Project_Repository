@@ -141,7 +141,7 @@ public class CreatePatient extends BaseTest{
 		    list.add(h2);
 		Headers headers = new Headers(list);
 		Response response = given().
-								spec(requestSpec).headers(headers).
+								spec(httpRequest).headers(headers).
 								contentType("application/json").
 					            body(patientData).log().body().
 					        when().

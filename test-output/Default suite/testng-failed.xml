@@ -3,56 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="CustomerApp.TestCasePackage.TestScripts.PatientsScripts.CreatePatient">
-        <methods>
-          <include name="beforeMethod"/>
-          <include name="setBaseURI"/>
-          <include name="test"/>
-          <include name="createPatient"/>
-        </methods>
-      </class> <!-- CustomerApp.TestCasePackage.TestScripts.PatientsScripts.CreatePatient -->
-      <class name="UpdateBooking">
-        <methods>
-          <include name="beforeMethod"/>
-          <include name="setBaseURI"/>
-          <include name="updateBooking"/>
-        </methods>
-      </class> <!-- UpdateBooking -->
-      <class name="DeleteBooking">
-        <methods>
-          <include name="beforeMethod"/>
-          <include name="setBaseURI"/>
-          <include name="getBookingIDs"/>
-        </methods>
-      </class> <!-- DeleteBooking -->
-      <class name="PartialUpdateBooking">
-        <methods>
-          <include name="beforeMethod"/>
-          <include name="setBaseURI"/>
-          <include name="updateBooking"/>
-        </methods>
-      </class> <!-- PartialUpdateBooking -->
-      <class name="GetBooking">
-        <methods>
-          <include name="beforeMethod"/>
-          <include name="setBaseURI"/>
-          <include name="getBookingIDs" invocation-numbers="0"/>
-        </methods>
-      </class> <!-- GetBooking -->
       <class name="CustomerApp_Package.TestScripts_Folder.PatientScripts.CreatePatient">
         <methods>
           <include name="beforeMethod"/>
-          <include name="createNewPatient"/>
+          <include name="createNewPatient" invocation-numbers="0"/>
           <include name="setBaseURI"/>
         </methods>
       </class> <!-- CustomerApp_Package.TestScripts_Folder.PatientScripts.CreatePatient -->
-      <class name="CreateBooking">
-        <methods>
-          <include name="beforeMethod"/>
-          <include name="createNewBooking" invocation-numbers="0"/>
-          <include name="setBaseURI"/>
-        </methods>
-      </class> <!-- CreateBooking -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

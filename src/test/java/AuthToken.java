@@ -42,7 +42,7 @@ public class AuthToken extends BaseTest {
 		
 		
 		Response response = given().
-								spec(requestSpec).
+								spec(httpRequest).
 								contentType("application/json").
 								body(jsonObject.toJSONString()).
 							when().

@@ -47,7 +47,7 @@ public class PartialUpdateBooking extends BaseTest {
 		//Sending the PATCH request
 		AllureLogger.logToAllure("Sending the PATCH request to partially update the booking detail of booking id : "+IDtoUpdate);
 		Response response = given().
-			spec(requestSpec).
+			spec(httpRequest).
 			header("Content-Type", "application/json").
 			header("Accept", "application/json").
 			header("Cookie", cookieValue).

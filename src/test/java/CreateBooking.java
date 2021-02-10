@@ -57,7 +57,7 @@ public class CreateBooking extends BaseTest {
 				
 		AllureLogger.logToAllure("Sending the POST request to create new booking");
 		Response response = given().
-								spec(requestSpec).
+								spec(httpRequest).
 								contentType("application/json").
 					            body(bookingDetails).log().body().
 					        when().
@@ -72,7 +72,7 @@ public class CreateBooking extends BaseTest {
 		
 		
 		//To get the newly created bookign id
-		System.out.println(response.then().extract().path("bookingid"));
+		System.out.println(response.then().extract().path("bookingid").toString());
 		newID = response.then().extract().path("bookingid").toString();
 		AllureLogger.logToAllure("Retrieved booking id : "+response.then().extract().path("bookingid"));
 		
