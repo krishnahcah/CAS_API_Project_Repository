@@ -3,12 +3,13 @@
 <suite name="ListnerSuite">
 
 <listeners>
-<listener class-name="utility.Listeners" />
+<listener class-name="utility.TestListener" />
 </listeners>
   <test thread-count="5" name="Test">
     <classes>
       <!-- <class name="POST_test"/> -->
-       <class name="CustomerApp_Package.TestScripts.PatientsScripts.CreatePatient"/>     
+      
+       <class name="CustomerApp_Package.TestScripts_Folder.PatientScripts.CreatePatient"/>     
        
     </classes>
   </test> <!-- Test -->

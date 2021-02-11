@@ -16,7 +16,7 @@ public class Extentreportclasses extends BaseTest {
 
 		extentTest = extent.createTest("MyFirstTest", "Sample description");
 		Assert.assertTrue(true);
-		extentTest.log(Status.PASS, "Test has been passed.");  
+		extentTest.log(Status.FAIL, "Test has been failed.");  
 	}
 
 	@AfterTest

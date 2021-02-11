@@ -38,7 +38,7 @@ public abstract class FrameworkUtility {
 		try {
 			obj = parser.parse(new FileReader(filePath));
 		} catch (Exception e) {
-			AllureLogger.logToAllure("Error in JSON object parsing with exception : "+e);
+			System.out.println("Error in JSON object parsing with exception : "+e);
 			
 		}
 		JSONObject jsonObject = (JSONObject) obj;
@@ -59,7 +59,7 @@ public abstract class FrameworkUtility {
 	 ******************************************************/
 
 	public void logResponseAsString(Response response) {
-		AllureLogger.logToAllure(response.asString());
+		//AllureLogger.logToAllure(response.asString());
 		System.out.println(response.asString());
 		
 	}

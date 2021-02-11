@@ -10,7 +10,6 @@ import io.restassured.response.Response;
 import pojoClasses.BookingDates;
 import pojoClasses.BookingDetails;
 
-import utility.AllureLogger;
 import utility.BaseTest;
 import utility.ExcelLib;
 
@@ -34,14 +33,14 @@ public class CreateBooking extends BaseTest {
 							  String additionalneeds, String dontUseThis
 							  ){
 		
-		AllureLogger.logToAllure("Starting the test to create new details");
+		//AllureLogger.logToAllure("Starting the test to create new details");
 		/*******************************************************
 		 * Send a POST request to /booking/{id}
 		 * and check that the response has HTTP status code 200
 		 ******************************************************/
 		
 		//Sending the GET request for a specific booking id and receiving the response
-		AllureLogger.logToAllure("Posting a new booking detail");
+		//AllureLogger.logToAllure("Posting a new booking detail");
 		
 		BookingDetails bookingDetails = new BookingDetails();
 		bookingDetails.setFirstname(firstname);
@@ -55,7 +54,7 @@ public class CreateBooking extends BaseTest {
 		bookingDates.setCheckout(checkout);
 		bookingDetails.setBookingdates(bookingDates);
 				
-		AllureLogger.logToAllure("Sending the POST request to create new booking");
+		//AllureLogger.logToAllure("Sending the POST request to create new booking");
 		Response response = given().
 								spec(httpRequest).
 								contentType("application/json").
@@ -64,7 +63,7 @@ public class CreateBooking extends BaseTest {
 					        	post("/booking");
 		
 		//Verify the response code
-		AllureLogger.logToAllure("Asserting the response if the status code returned is 200");
+		//AllureLogger.logToAllure("Asserting the response if the status code returned is 200");
 		response.then().spec(responseSpec);		
 
 		//To log the response to report
@@ -74,7 +73,7 @@ public class CreateBooking extends BaseTest {
 		//To get the newly created bookign id
 		System.out.println(response.then().extract().path("bookingid").toString());
 		newID = response.then().extract().path("bookingid").toString();
-		AllureLogger.logToAllure("Retrieved booking id : "+response.then().extract().path("bookingid"));
+		//AllureLogger.logToAllure("Retrieved booking id : "+response.then().extract().path("bookingid"));
 		
 	}	
 }

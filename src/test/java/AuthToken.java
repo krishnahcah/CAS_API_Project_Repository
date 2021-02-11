@@ -11,7 +11,7 @@ import static io.restassured.RestAssured.given; //import this
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import io.restassured.specification.ResponseSpecification;
-import utility.AllureLogger;
+//import utility.AllureLogger;
 import utility.BaseTest;
 import utility.FrameworkConstants;
 import utility.FrameworkUtility;
@@ -27,7 +27,7 @@ public class AuthToken extends BaseTest {
     
 	public static String post_CreateAuth(){
 		
-		AllureLogger.logToAllure("Starting the test for POST method for create authentication");
+		//AllureLogger.logToAllure("Starting the test for POST method for create authentication");
 		/*******************************************************
 		 * Send a POST request to /auth
 		 * and check that the response has HTTP status code 200
@@ -37,8 +37,8 @@ public class AuthToken extends BaseTest {
 		String password = readConfigurationFile("password");
 		jsonObject.put("password", password);
 		jsonObject.put("username", username);
-		AllureLogger.logToAllure("Username from config file is : \n"+ username);
-		AllureLogger.logToAllure("Password from config file is : \n"+ password);
+		//AllureLogger.logToAllure("Username from config file is : \n"+ username);
+		//AllureLogger.logToAllure("Password from config file is : \n"+ password);
 		
 		
 		Response response = given().
@@ -48,7 +48,7 @@ public class AuthToken extends BaseTest {
 							when().
 								post("/auth");
 		
-		AllureLogger.logToAllure("Asserting the response if the status code returned is 200");
+		//AllureLogger.logToAllure("Asserting the response if the status code returned is 200");
 		response.then().spec(responseSpec);
 		
 		
