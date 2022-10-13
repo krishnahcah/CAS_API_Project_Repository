@@ -1,0 +1,29 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "examples": [
+        {
+            "picture": "https://dev-hcah-cas-app.s3.ap-south-1.amazonaws.com/patient/profile/pictures/1614163929testimgHD.jpg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAZ2CABGO7ILPLQNQK%2F20210224%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Date=20210224T105209Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Signature=8facf80d716f9600a90a9697d9ee74ce1a62e6f259b7e7e1e4640793240d7863"
+        }
+    ],
+    "required": [
+        "picture"
+    ],
+    "properties": {
+        "picture": {
+            "$id": "#/properties/picture",
+            "type": "string",
+            "title": "The picture schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "https://dev-hcah-cas-app.s3.ap-south-1.amazonaws.com/patient/profile/pictures/1614163929testimgHD.jpg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAZ2CABGO7ILPLQNQK%2F20210224%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Date=20210224T105209Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Signature=8facf80d716f9600a90a9697d9ee74ce1a62e6f259b7e7e1e4640793240d7863"
+            ]
+        }
+    },
+    "additionalProperties": true
+}

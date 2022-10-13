@@ -1,16 +1,101 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Suite">
-  <test thread-count="5" name="Test">
-    <classes>
-      <!-- <class name="POST_test"/> -->
-       <class name="GetBooking"/>     
-       <class name="CreateBooking"/> 
-       <class name="UpdateBooking"/> 
-       <class name="PartialUpdateBooking"/>
-       <class name="DeleteBooking"/>         
-        
-    </classes>
-  </test> <!-- Test -->
-</suite> <!-- Suite -->
+<suite name="Regression Suite">
 
+	<test name="Regression TCs">
+		<classes>
+<!-- SEND OTP -->
+			 <class name="CAS_API.SendOTP_TCs.TC_SendOTP_Valid_Mobile_Info" /> 
+			 
+			<class name="CAS_API.SendOTP_TCs.TC_SendOTP_Invalid_Mobile_Info" />
+			<class name="CAS_API.SendOTP_TCs.TC_SendOTP_Invalid_Empty_Mobile_Info" />
+<!-- Verify OTP  -->
+		 <class name="CAS_API.VerifyOTP_TCs.TC_VerifyOTP_Valid_Mobile_OTP_Info" />
+			<class name="CAS_API.VerifyOTP_TCs.TC_VerifyOTP_Valid_Mobile_Invalid_OTP_Info" />
+			<class name="CAS_API.VerifyOTP_TCs.TC_VerifyOTP_Invalid_Empty_Mobile_Empty_OTP_Info" /> 
+		
+							
+<!-- Home -->
+ 			<class name="CAS_API.Home.TC_Home_Invalid_Auth_Info" />
+			<class name="CAS_API.Home.TC_Home_Valid_Auth_Info" />
+<!-- States -->
+			<class name="CAS_API.States_TCs.TC_States_Valid_Auth_Info" />
+			<class name="CAS_API.States_TCs.TC_States_Invalid_Auth_Info" />
+<!--Cities -->			
+			<class name="CAS_API.Cities_TCs.TC_City_Valid_Auth_Info" />
+			<class name="CAS_API.Cities_TCs.TC_City_Invalid_Auth_Info" />
+<!--Splash-->			
+			<class name="CAS_API.Splash_TCs.TC_Splash_Valid_Auth_Info" />
+			<class name="CAS_API.Splash_TCs.TC_Splash_Invalid_Auth_Info" />
+			
+<!-- Care-Lead-->			
+			<class
+				name="CAS_API.Care_TCs.TC_Care_Lead_Valid_Auth_Info" />
+			<class
+				name="CAS_API.Care_TCs.TC_Care_Lead_Invalid_Auth_Info" />
+<!-- Care Taker -->				
+			<class
+				name="CAS_API.CaretakerRelations_TCs.TC_CareTaker_Valid_Auth_Info" />
+			<class
+				name="CAS_API.CaretakerRelations_TCs.TC_CareTaker_Invalid_Auth_Info" />
+<!-- Patient Details -->			
+			
+			<class
+				name="CAS_API.Patient_Details.Patient_Complete_Profile_TCs.TC_Patient_Complete_Profile_Invalid_Auth_Info" />
+			<class
+				name="CAS_API.Patient_Details.Patient_Complete_Profile_TCs.TC_Patient_Complete_Profile_Valid_Auth_And_Data_Info" />
+			<class
+				name="CAS_API.Patient_Details.Patient_Login_TCs.TC_PatientLogin_Invalid_Auth_Info" />
+			<class
+				name="CAS_API.Patient_Details.Patient_Login_TCs.TC_PatientLogin_Valid_Auth_And_Data_Info" />
+			<class
+				name="CAS_API.Patient_Details.Patient_Profile_TCs.TC_GetPatientProfile_Invalid_Info" />
+			<class
+				name="CAS_API.Patient_Details.Patient_Profile_TCs.TC_GetPatientProfile_Valid_Auth_Info" />
+			<class
+				name="CAS_API.Patient_Details.Patient_Program_TCs.TC_PatientPrograms_Invalid_Auth_Info" />
+			<class
+				name="CAS_API.Patient_Details.Patient_Program_TCs.TC_PatientPrograms_Valid_Auth_Info" />
+			<class
+				name="CAS_API.Patient_Details.ProfilePicture_TCs.TC_ProfilePicture_Invalid_Auth_Info" />
+			<class
+				name="CAS_API.Patient_Details.ProfilePicture_TCs.TC_ProfilePicture_Valid_Auth_Info" />
+			
+<!-- KPP  -->
+		<class name="CAS_API.KPP.Get_History_TCs.TC_KPP_Get_History_Invalid_Auth_Info" />	
+		
+		<class name="CAS_API.KPP.Get_Questions_TCs.TC_KPP_Get_Questions_Invalid_Auth_Info" />
+		<class name="CAS_API.KPP.Post_Tracking_TCs.TC_KPP_Save_Tracking_Valid_Auth_Info" />	
+		<class name="CAS_API.KPP.Post_Tracking_TCs.TC_KPP_Save_Tracking_Invalid_Auth_Info" />
+		<class name="CAS_API.KPP.Update_Tracking_TCs.TC_KPP_Update_Tracking_Valid_Auth_Info" />	
+		<class name="CAS_API.KPP.Update_Tracking_TCs.TC_KPP_Update_Tracking_Invalid_Auth_Info" />
+		
+	<!-- Learning Content  -->	
+		<class name="CAS_API.Learning_Content_TCs.TC_Learning_Content_Valid_Auth_Info" />
+		<class name="CAS_API.Learning_Content_TCs.TC_Learning_Content_Invalid_Auth_Info" />
+	
+	<!-- Patient Details  -->		
+		
+		<class name="CAS_API.Patient_Details.Patient_Complete_Profile_TCs.TC_Patient_Complete_Profile_Valid_Auth_And_Data_Info" />
+		<class name="CAS_API.Patient_Details.Patient_Complete_Profile_TCs.TC_Patient_Complete_Profile_Invalid_Auth_Info" />
+		<class name="CAS_API.Patient_Details.Patient_Login_TCs.TC_PatientLogin_Valid_Auth_And_Data_Info" />
+		<class name="CAS_API.Patient_Details.Patient_Login_TCs.TC_PatientLogin_Invalid_Auth_Info" />
+		<class name="CAS_API.Patient_Details.Patient_Profile_TCs.TC_GetPatientProfile_Invalid_Info" />
+		<class name="CAS_API.Patient_Details.Patient_Profile_TCs.TC_GetPatientProfile_Valid_Auth_Info" />
+		<class name="CAS_API.Patient_Details.Patient_Program_TCs.TC_PatientPrograms_Invalid_Auth_Info" />
+		<class name="CAS_API.Patient_Details.Patient_Program_TCs.TC_PatientPrograms_Valid_Auth_Info" />
+		<class name="CAS_API.Patient_Details.ProfilePicture_TCs.TC_ProfilePicture_Valid_Auth_Info" />
+		<class name="CAS_API.Patient_Details.ProfilePicture_TCs.TC_ProfilePicture_Invalid_Auth_Info" />
+		
+		<!-- Program Enrollment  -->	
+		<!-- <class name="CAS_API.Program_Enrollment.DismissCard_TCs.TC_EnrollmentDismissCard_InvalidAuth_Info" /> -->
+		<class name="CAS_API.Program_Enrollment.DismissCard_TCs.TC_EnrollmentDismissCard_Valid_Auth_Info" />
+		<class name="CAS_API.Program_Enrollment.EnrollmentSection_TCs.TC_EnrollmentSection_Valid_Auth_Info" />
+		<class name="CAS_API.Program_Enrollment.EnrollmentSection_TCs.TC_EnrollmentSection_InvalidAuth_Info" />
+		<class name="CAS_API.Program_Enrollment.SectionQuestions_TCs.TC_EnrollmentQuestionSection_InvalidAuth_Info" />
+		<class name="CAS_API.Program_Enrollment.SectionQuestions_TCs.TC_EnrollmentQuestionSection_Valid_Auth_With_400_BadRequest_Info" />
+		<class name="CAS_API.Program_Enrollment.SubmitAnswers_TCs.TC_Enrollment_Submit_Answers_Valid_Auth_Info" />
+		<class name="CAS_API.Program_Enrollment.SubmitAnswers_TCs.TC_Enrollment_Submit_Answers_InvalidAuth_Info" />
+		</classes>
+	</test>
+</suite>

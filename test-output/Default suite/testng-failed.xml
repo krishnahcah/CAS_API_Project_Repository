@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="CustomerApp_Package.TestScripts_Folder.PatientScripts.GetPatient">
+      <class name="CAS_API.Care_TCs.TC_Care_Lead_Valid_Auth_Info">
         <methods>
-          <include name="beforeMethod"/>
-          <include name="setBaseURI"/>
-          <include name="checkResposeBody"/>
+          <include name="checkLeadResponseWithValidAuth_EmptyPayload" invocation-numbers="0"/>
+          <include name="baseTest"/>
+          <include name="checkLeadResponseWithValidAuth_ValidPayload" invocation-numbers="0"/>
         </methods>
-      </class> <!-- CustomerApp_Package.TestScripts_Folder.PatientScripts.GetPatient -->
+      </class> <!-- CAS_API.Care_TCs.TC_Care_Lead_Valid_Auth_Info -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

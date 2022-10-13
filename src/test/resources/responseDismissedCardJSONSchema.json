@@ -1,0 +1,92 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "examples": [
+        {
+            "program_enrollment": {
+                "progress": 100,
+                "status": "dismissed",
+                "reason": "",
+                "sections": []
+            }
+        }
+    ],
+    "required": [
+        "program_enrollment"
+    ],
+    "properties": {
+        "program_enrollment": {
+            "$id": "#/properties/program_enrollment",
+            "type": "object",
+            "title": "The program_enrollment schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+                {
+                    "progress": 100,
+                    "status": "dismissed",
+                    "reason": "",
+                    "sections": []
+                }
+            ],
+            "required": [
+                "progress",
+                "status",
+                "reason",
+                "sections"
+            ],
+            "properties": {
+                "progress": {
+                    "$id": "#/properties/program_enrollment/properties/progress",
+                    "type": "integer",
+                    "title": "The progress schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        100
+                    ]
+                },
+                "status": {
+                    "$id": "#/properties/program_enrollment/properties/status",
+                    "type": "string",
+                    "title": "The status schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "dismissed"
+                    ]
+                },
+                "reason": {
+                    "$id": "#/properties/program_enrollment/properties/reason",
+                    "type": "string",
+                    "title": "The reason schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        ""
+                    ]
+                },
+                "sections": {
+                    "$id": "#/properties/program_enrollment/properties/sections",
+                    "type": "array",
+                    "title": "The sections schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": [],
+                    "examples": [
+                        []
+                    ],
+                    "additionalItems": true,
+                    "items": {
+                        "$id": "#/properties/program_enrollment/properties/sections/items"
+                    }
+                }
+            },
+            "additionalProperties": true
+        }
+    },
+    "additionalProperties": true
+}

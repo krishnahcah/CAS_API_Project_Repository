@@ -1,0 +1,108 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "examples": [
+        {
+            "error": {
+                "message": "Validations are missing.",
+                "validate": {
+                    "mobile": [
+                        "The mobile field is required."
+                    ]
+                }
+            }
+        }
+    ],
+    "required": [
+        "error"
+    ],
+    "properties": {
+        "error": {
+            "$id": "#/properties/error",
+            "type": "object",
+            "title": "The error schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+                {
+                    "message": "Validations are missing.",
+                    "validate": {
+                        "mobile": [
+                            "The mobile field is required."
+                        ]
+                    }
+                }
+            ],
+            "required": [
+                "message",
+                "validate"
+            ],
+            "properties": {
+                "message": {
+                    "$id": "#/properties/error/properties/message",
+                    "type": "string",
+                    "title": "The message schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "Validations are missing."
+                    ]
+                },
+                "validate": {
+                    "$id": "#/properties/error/properties/validate",
+                    "type": "object",
+                    "title": "The validate schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": {},
+                    "examples": [
+                        {
+                            "mobile": [
+                                "The mobile field is required."
+                            ]
+                        }
+                    ],
+                    "required": [
+                        "mobile"
+                    ],
+                    "properties": {
+                        "mobile": {
+                            "$id": "#/properties/error/properties/validate/properties/mobile",
+                            "type": "array",
+                            "title": "The mobile schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": [],
+                            "examples": [
+                                [
+                                    "The mobile field is required."
+                                ]
+                            ],
+                            "additionalItems": true,
+                            "items": {
+                                "$id": "#/properties/error/properties/validate/properties/mobile/items",
+                                "anyOf": [
+                                    {
+                                        "$id": "#/properties/error/properties/validate/properties/mobile/items/anyOf/0",
+                                        "type": "string",
+                                        "title": "The first anyOf schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "The mobile field is required."
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "additionalProperties": true
+                }
+            },
+            "additionalProperties": true
+        }
+    },
+    "additionalProperties": true
+}

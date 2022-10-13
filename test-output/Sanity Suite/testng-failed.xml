@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Sanity Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Sanity test(failed)">
+    <classes>
+      <class name="CAS_API.SendOTP_TCs.TC_SendOTP_Valid_Mobile_Info">
+        <methods>
+          <include name="baseTest"/>
+          <include name="afterClass"/>
+          <include name="sendOTP_CheckResponseWithValidMobileNumber"/>
+        </methods>
+      </class> <!-- CAS_API.SendOTP_TCs.TC_SendOTP_Valid_Mobile_Info -->
+    </classes>
+  </test> <!-- Sanity test(failed) -->
+</suite> <!-- Failed suite [Sanity Suite] -->

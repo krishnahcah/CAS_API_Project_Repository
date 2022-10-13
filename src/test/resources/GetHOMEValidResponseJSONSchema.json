@@ -1,0 +1,643 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "examples": [
+        {
+            "program": {
+                "title": "Aadhar Program",
+                "logo": "",
+                "link": {
+                    "url": "public/program_code/pdf_details/lipaglyn_benefits_optimized1593173707.pdf",
+                    "format": "pdf"
+                },
+                "benefits": [
+                    {
+                        "title": "Chat with Digital Assistant",
+                        "type": "chat",
+                        "extra": {},
+                        "image": ""
+                    },
+                    {
+                        "title": "View Expert Content",
+                        "type": "learn",
+                        "extra": {},
+                        "image": ""
+                    },
+                    {
+                        "title": "Redeem Free Dose",
+                        "type": "link",
+                        "extra": {
+                            "format": "pdf",
+                            "url": "http://app.hcah.in/public/program_code/benefit/M6_1593678703.pdf"
+                        },
+                        "image": ""
+                    },
+                    {
+                        "title": "Track Medication",
+                        "type": "track_offline",
+                        "extra": {
+                            "item": "medication"
+                        },
+                        "image": ""
+                    }
+                ],
+                "quickLinks": [
+                    {
+                        "title": "Track Diet",
+                        "type": "track_offline",
+                        "extra": {
+                            "item": "food"
+                        },
+                        "image": ""
+                    },
+                    {
+                        "title": "Track Activity",
+                        "type": "track_offline",
+                        "extra": {
+                            "item": "activity"
+                        },
+                        "image": ""
+                    },
+                    {
+                        "title": "Track Water",
+                        "type": "track_offline",
+                        "extra": {
+                            "item": "water"
+                        },
+                        "image": ""
+                    },
+                    {
+                        "title": "Track Weight",
+                        "type": "track_offline",
+                        "extra": {
+                            "item": "weight"
+                        },
+                        "image": ""
+                    }
+                ]
+            },
+            "progress": {
+                "overall": 95.24,
+                "health": 100,
+                "contact": 85.71,
+                "nok": 100,
+                "lang": 100,
+                "dismiss": true
+            },
+            "program_enrollment": {
+                "progress": 100,
+                "status": "dismissed",
+                "reason": "",
+                "sections": []
+            },
+            "cta": []
+        }
+    ],
+    "required": [
+        "program",
+        "progress",
+        "program_enrollment",
+        "cta"
+    ],
+    "properties": {
+        "program": {
+            "$id": "#/properties/program",
+            "type": "object",
+            "title": "The program schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+                {
+                    "title": "Aadhar Program",
+                    "logo": "",
+                    "link": {
+                        "url": "public/program_code/pdf_details/lipaglyn_benefits_optimized1593173707.pdf",
+                        "format": "pdf"
+                    },
+                    "benefits": [
+                        {
+                            "title": "Chat with Digital Assistant",
+                            "type": "chat",
+                            "extra": {},
+                            "image": ""
+                        },
+                        {
+                            "title": "View Expert Content",
+                            "type": "learn",
+                            "extra": {},
+                            "image": ""
+                        },
+                        {
+                            "title": "Redeem Free Dose",
+                            "type": "link",
+                            "extra": {
+                                "format": "pdf",
+                                "url": "http://app.hcah.in/public/program_code/benefit/M6_1593678703.pdf"
+                            },
+                            "image": ""
+                        },
+                        {
+                            "title": "Track Medication",
+                            "type": "track_offline",
+                            "extra": {
+                                "item": "medication"
+                            },
+                            "image": ""
+                        }
+                    ],
+                    "quickLinks": [
+                        {
+                            "title": "Track Diet",
+                            "type": "track_offline",
+                            "extra": {
+                                "item": "food"
+                            },
+                            "image": ""
+                        },
+                        {
+                            "title": "Track Activity",
+                            "type": "track_offline",
+                            "extra": {
+                                "item": "activity"
+                            },
+                            "image": ""
+                        },
+                        {
+                            "title": "Track Water",
+                            "type": "track_offline",
+                            "extra": {
+                                "item": "water"
+                            },
+                            "image": ""
+                        },
+                        {
+                            "title": "Track Weight",
+                            "type": "track_offline",
+                            "extra": {
+                                "item": "weight"
+                            },
+                            "image": ""
+                        }
+                    ]
+                }
+            ],
+            "required": [
+                "title",
+                "logo",
+                "link",
+                "benefits",
+                "quickLinks"
+            ],
+            "properties": {
+                "title": {
+                    "$id": "#/properties/program/properties/title",
+                    "type": "string",
+                    "title": "The title schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "Aadhar Program"
+                    ]
+                },
+                "logo": {
+                    "$id": "#/properties/program/properties/logo",
+                    "type": "string",
+                    "title": "The logo schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        ""
+                    ]
+                },
+                "link": {
+                    "$id": "#/properties/program/properties/link",
+                    "type": "object",
+                    "title": "The link schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": {},
+                    "examples": [
+                        {
+                            "url": "public/program_code/pdf_details/lipaglyn_benefits_optimized1593173707.pdf",
+                            "format": "pdf"
+                        }
+                    ],
+                    "required": [
+                        "url",
+                        "format"
+                    ],
+                    "properties": {
+                        "url": {
+                            "$id": "#/properties/program/properties/link/properties/url",
+                            "type": "string",
+                            "title": "The url schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "public/program_code/pdf_details/lipaglyn_benefits_optimized1593173707.pdf"
+                            ]
+                        },
+                        "format": {
+                            "$id": "#/properties/program/properties/link/properties/format",
+                            "type": "string",
+                            "title": "The format schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "pdf"
+                            ]
+                        }
+                    },
+                    "additionalProperties": true
+                },
+                "benefits": {
+                    "$id": "#/properties/program/properties/benefits",
+                    "type": "array",
+                    "title": "The benefits schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": [],
+                    "examples": [
+                        [
+                            {
+                                "title": "Chat with Digital Assistant",
+                                "type": "chat",
+                                "extra": {},
+                                "image": ""
+                            },
+                            {
+                                "title": "View Expert Content",
+                                "type": "learn",
+                                "extra": {},
+                                "image": ""
+                            }
+                        ]
+                    ],
+                    "additionalItems": true,
+                    "items": {
+                        "$id": "#/properties/program/properties/benefits/items",
+                        "anyOf": [
+                            {
+                                "$id": "#/properties/program/properties/benefits/items/anyOf/0",
+                                "type": "object",
+                                "title": "The first anyOf schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": {},
+                                "examples": [
+                                    {
+                                        "title": "Chat with Digital Assistant",
+                                        "type": "chat",
+                                        "extra": {},
+                                        "image": ""
+                                    }
+                                ],
+                                "required": [
+                                    "title",
+                                    "type",
+                                    "extra",
+                                    "image"
+                                ],
+                                "properties": {
+                                    "title": {
+                                        "$id": "#/properties/program/properties/benefits/items/anyOf/0/properties/title",
+                                        "type": "string",
+                                        "title": "The title schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "Chat with Digital Assistant"
+                                        ]
+                                    },
+                                    "type": {
+                                        "$id": "#/properties/program/properties/benefits/items/anyOf/0/properties/type",
+                                        "type": "string",
+                                        "title": "The type schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "chat"
+                                        ]
+                                    },
+                                    "extra": {
+                                        "$id": "#/properties/program/properties/benefits/items/anyOf/0/properties/extra",
+                                        "type": "object",
+                                        "title": "The extra schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": {},
+                                        "examples": [
+                                            {}
+                                        ],
+                                        "required": [],
+                                        "additionalProperties": true
+                                    },
+                                    "image": {
+                                        "$id": "#/properties/program/properties/benefits/items/anyOf/0/properties/image",
+                                        "type": "string",
+                                        "title": "The image schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            ""
+                                        ]
+                                    }
+                                },
+                                "additionalProperties": true
+                            }
+                        ]
+                    }
+                },
+                "quickLinks": {
+                    "$id": "#/properties/program/properties/quickLinks",
+                    "type": "array",
+                    "title": "The quickLinks schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": [],
+                    "examples": [
+                        [
+                            {
+                                "title": "Track Diet",
+                                "type": "track_offline",
+                                "extra": {
+                                    "item": "food"
+                                },
+                                "image": ""
+                            },
+                            {
+                                "title": "Track Activity",
+                                "type": "track_offline",
+                                "extra": {
+                                    "item": "activity"
+                                },
+                                "image": ""
+                            }
+                        ]
+                    ],
+                    "additionalItems": true,
+                    "items": {
+                        "$id": "#/properties/program/properties/quickLinks/items",
+                        "anyOf": [
+                            {
+                                "$id": "#/properties/program/properties/quickLinks/items/anyOf/0",
+                                "type": "object",
+                                "title": "The first anyOf schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": {},
+                                "examples": [
+                                    {
+                                        "title": "Track Diet",
+                                        "type": "track_offline",
+                                        "extra": {
+                                            "item": "food"
+                                        },
+                                        "image": ""
+                                    }
+                                ],
+                                "required": [
+                                    "title",
+                                    "type",
+                                    "extra",
+                                    "image"
+                                ],
+                                "properties": {
+                                    "title": {
+                                        "$id": "#/properties/program/properties/quickLinks/items/anyOf/0/properties/title",
+                                        "type": "string",
+                                        "title": "The title schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "Track Diet"
+                                        ]
+                                    },
+                                    "type": {
+                                        "$id": "#/properties/program/properties/quickLinks/items/anyOf/0/properties/type",
+                                        "type": "string",
+                                        "title": "The type schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "track_offline"
+                                        ]
+                                    },
+                                    "extra": {
+                                        "$id": "#/properties/program/properties/quickLinks/items/anyOf/0/properties/extra",
+                                        "type": "object",
+                                        "title": "The extra schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": {},
+                                        "examples": [
+                                            {
+                                                "item": "food"
+                                            }
+                                        ],
+                                        "required": [
+                                            "item"
+                                        ],
+                                        "properties": {
+                                            "item": {
+                                                "$id": "#/properties/program/properties/quickLinks/items/anyOf/0/properties/extra/properties/item",
+                                                "type": "string",
+                                                "title": "The item schema",
+                                                "description": "An explanation about the purpose of this instance.",
+                                                "default": "",
+                                                "examples": [
+                                                    "food"
+                                                ]
+                                            }
+                                        },
+                                        "additionalProperties": true
+                                    },
+                                    "image": {
+                                        "$id": "#/properties/program/properties/quickLinks/items/anyOf/0/properties/image",
+                                        "type": "string",
+                                        "title": "The image schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            ""
+                                        ]
+                                    }
+                                },
+                                "additionalProperties": true
+                            }
+                        ]
+                    }
+                }
+            },
+            "additionalProperties": true
+        },
+        "progress": {
+            "$id": "#/properties/progress",
+            "type": "object",
+            "title": "The progress schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+                {
+                    "overall": 95.24,
+                    "health": 100,
+                    "contact": 85.71,
+                    "nok": 100,
+                    "lang": 100,
+                    "dismiss": true
+                }
+            ],
+            "required": [
+                "overall",
+                "health",
+                "contact",
+                "nok",
+                "lang",
+                "dismiss"
+            ],
+            "properties": {
+                "overall": {
+                    "$id": "#/properties/progress/properties/overall",
+                    "type": "number",
+                    "title": "The overall schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0.0,
+                    "examples": [
+                        95.24
+                    ]
+                },
+                "health": {
+                    "$id": "#/properties/progress/properties/health",
+                    "type": "integer",
+                    "title": "The health schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        100
+                    ]
+                },
+                "contact": {
+                    "$id": "#/properties/progress/properties/contact",
+                    "type": "number",
+                    "title": "The contact schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0.0,
+                    "examples": [
+                        85.71
+                    ]
+                },
+                "nok": {
+                    "$id": "#/properties/progress/properties/nok",
+                    "type": "integer",
+                    "title": "The nok schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        100
+                    ]
+                },
+                "lang": {
+                    "$id": "#/properties/progress/properties/lang",
+                    "type": "integer",
+                    "title": "The lang schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        100
+                    ]
+                },
+                "dismiss": {
+                    "$id": "#/properties/progress/properties/dismiss",
+                    "type": "boolean",
+                    "title": "The dismiss schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": false,
+                    "examples": [
+                        true
+                    ]
+                }
+            },
+            "additionalProperties": true
+        },
+        "program_enrollment": {
+            "$id": "#/properties/program_enrollment",
+            "type": "object",
+            "title": "The program_enrollment schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+                {
+                    "progress": 100,
+                    "status": "dismissed",
+                    "reason": "",
+                    "sections": []
+                }
+            ],
+            "required": [
+                "progress",
+                "status",
+                "reason",
+                "sections"
+            ],
+            "properties": {
+                "progress": {
+                    "$id": "#/properties/program_enrollment/properties/progress",
+                    "type": "integer",
+                    "title": "The progress schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        100
+                    ]
+                },
+                "status": {
+                    "$id": "#/properties/program_enrollment/properties/status",
+                    "type": "string",
+                    "title": "The status schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "dismissed"
+                    ]
+                },
+                "reason": {
+                    "$id": "#/properties/program_enrollment/properties/reason",
+                    "type": "string",
+                    "title": "The reason schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        ""
+                    ]
+                },
+                "sections": {
+                    "$id": "#/properties/program_enrollment/properties/sections",
+                    "type": "array",
+                    "title": "The sections schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": [],
+                    "examples": [
+                        []
+                    ],
+                    "additionalItems": true,
+                    "items": {
+                        "$id": "#/properties/program_enrollment/properties/sections/items"
+                    }
+                }
+            },
+            "additionalProperties": true
+        },
+        "cta": {
+            "$id": "#/properties/cta",
+            "type": "array",
+            "title": "The cta schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": [],
+            "examples": [
+                []
+            ],
+            "additionalItems": true,
+            "items": {
+                "$id": "#/properties/cta/items"
+            }
+        }
+    },
+    "additionalProperties": true
+}

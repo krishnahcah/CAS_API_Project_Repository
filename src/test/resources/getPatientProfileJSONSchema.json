@@ -1,0 +1,476 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "examples": [
+        {
+            "nok": {
+                "first_name": "",
+                "last_name": "",
+                "relation_id": 0,
+                "program_nok": false,
+                "patient_nok": false,
+                "relation": "",
+                "mobile": ""
+            },
+            "health": {
+                "height": 0,
+                "weight": 0,
+                "waist_size": 0,
+                "daily_activity": 0,
+                "dob": ""
+            },
+            "contact": {
+                "alternate_number": "",
+                "state_id": 0,
+                "state": "",
+                "city_id": 0,
+                "email": "",
+                "city": "",
+                "address": "",
+                "locality": "",
+                "pincode": 0
+            },
+            "lang": {
+                "lang_id": 1
+            },
+            "progress": {
+                "overall": 0,
+                "health": 0,
+                "contact": 0,
+                "nok": 0,
+                "lang": 100,
+                "dismiss": false
+            }
+        }
+    ],
+    "required": [
+        "nok",
+        "health",
+        "contact",
+        "lang",
+        "progress"
+    ],
+    "properties": {
+        "nok": {
+            "$id": "#/properties/nok",
+            "type": "object",
+            "title": "The nok schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+                {
+                    "first_name": "",
+                    "last_name": "",
+                    "relation_id": 0,
+                    "program_nok": false,
+                    "patient_nok": false,
+                    "relation": "",
+                    "mobile": ""
+                }
+            ],
+            "required": [
+                "first_name",
+                "last_name",
+                "relation_id",
+                "program_nok",
+                "patient_nok",
+                "relation",
+                "mobile"
+            ],
+            "properties": {
+                "first_name": {
+                    "$id": "#/properties/nok/properties/first_name",
+                    "type": "string",
+                    "title": "The first_name schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        ""
+                    ]
+                },
+                "last_name": {
+                    "$id": "#/properties/nok/properties/last_name",
+                    "type": "string",
+                    "title": "The last_name schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        ""
+                    ]
+                },
+                "relation_id": {
+                    "$id": "#/properties/nok/properties/relation_id",
+                    "type": "integer",
+                    "title": "The relation_id schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        0
+                    ]
+                },
+                "program_nok": {
+                    "$id": "#/properties/nok/properties/program_nok",
+                    "type": "boolean",
+                    "title": "The program_nok schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": false,
+                    "examples": [
+                        false
+                    ]
+                },
+                "patient_nok": {
+                    "$id": "#/properties/nok/properties/patient_nok",
+                    "type": "boolean",
+                    "title": "The patient_nok schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": false,
+                    "examples": [
+                        false
+                    ]
+                },
+                "relation": {
+                    "$id": "#/properties/nok/properties/relation",
+                    "type": "string",
+                    "title": "The relation schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        ""
+                    ]
+                },
+                "mobile": {
+                    "$id": "#/properties/nok/properties/mobile",
+                    "type": "string",
+                    "title": "The mobile schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        ""
+                    ]
+                }
+            },
+            "additionalProperties": true
+        },
+        "health": {
+            "$id": "#/properties/health",
+            "type": "object",
+            "title": "The health schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+                {
+                    "height": 0,
+                    "weight": 0,
+                    "waist_size": 0,
+                    "daily_activity": 0,
+                    "dob": ""
+                }
+            ],
+            "required": [
+                "height",
+                "weight",
+                "waist_size",
+                "daily_activity",
+                "dob"
+            ],
+            "properties": {
+                "height": {
+                    "$id": "#/properties/health/properties/height",
+                    "type": "integer",
+                    "title": "The height schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        0
+                    ]
+                },
+                "weight": {
+                    "$id": "#/properties/health/properties/weight",
+                    "type": "integer",
+                    "title": "The weight schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        0
+                    ]
+                },
+                "waist_size": {
+                    "$id": "#/properties/health/properties/waist_size",
+                    "type": "integer",
+                    "title": "The waist_size schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        0
+                    ]
+                },
+                "daily_activity": {
+                    "$id": "#/properties/health/properties/daily_activity",
+                    "type": "integer",
+                    "title": "The daily_activity schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        0
+                    ]
+                },
+                "dob": {
+                    "$id": "#/properties/health/properties/dob",
+                    "type": "string",
+                    "title": "The dob schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        ""
+                    ]
+                }
+            },
+            "additionalProperties": true
+        },
+        "contact": {
+            "$id": "#/properties/contact",
+            "type": "object",
+            "title": "The contact schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+                {
+                    "alternate_number": "",
+                    "state_id": 0,
+                    "state": "",
+                    "city_id": 0,
+                    "email": "",
+                    "city": "",
+                    "address": "",
+                    "locality": "",
+                    "pincode": 0
+                }
+            ],
+            "required": [
+                "alternate_number",
+                "state_id",
+                "state",
+                "city_id",
+                "email",
+                "city",
+                "address",
+                "locality",
+                "pincode"
+            ],
+            "properties": {
+                "alternate_number": {
+                    "$id": "#/properties/contact/properties/alternate_number",
+                    "type": "string",
+                    "title": "The alternate_number schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        ""
+                    ]
+                },
+                "state_id": {
+                    "$id": "#/properties/contact/properties/state_id",
+                    "type": "integer",
+                    "title": "The state_id schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        0
+                    ]
+                },
+                "state": {
+                    "$id": "#/properties/contact/properties/state",
+                    "type": "string",
+                    "title": "The state schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        ""
+                    ]
+                },
+                "city_id": {
+                    "$id": "#/properties/contact/properties/city_id",
+                    "type": "integer",
+                    "title": "The city_id schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        0
+                    ]
+                },
+                "email": {
+                    "$id": "#/properties/contact/properties/email",
+                    "type": "string",
+                    "title": "The email schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        ""
+                    ]
+                },
+                "city": {
+                    "$id": "#/properties/contact/properties/city",
+                    "type": "string",
+                    "title": "The city schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        ""
+                    ]
+                },
+                "address": {
+                    "$id": "#/properties/contact/properties/address",
+                    "type": "string",
+                    "title": "The address schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        ""
+                    ]
+                },
+                "locality": {
+                    "$id": "#/properties/contact/properties/locality",
+                    "type": "string",
+                    "title": "The locality schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        ""
+                    ]
+                },
+                "pincode": {
+                    "$id": "#/properties/contact/properties/pincode",
+                    "type": "integer",
+                    "title": "The pincode schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        0
+                    ]
+                }
+            },
+            "additionalProperties": true
+        },
+        "lang": {
+            "$id": "#/properties/lang",
+            "type": "object",
+            "title": "The lang schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+                {
+                    "lang_id": 1
+                }
+            ],
+            "required": [
+                "lang_id"
+            ],
+            "properties": {
+                "lang_id": {
+                    "$id": "#/properties/lang/properties/lang_id",
+                    "type": "integer",
+                    "title": "The lang_id schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        1
+                    ]
+                }
+            },
+            "additionalProperties": true
+        },
+        "progress": {
+            "$id": "#/properties/progress",
+            "type": "object",
+            "title": "The progress schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+                {
+                    "overall": 0,
+                    "health": 0,
+                    "contact": 0,
+                    "nok": 0,
+                    "lang": 100,
+                    "dismiss": false
+                }
+            ],
+            "required": [
+                "overall",
+                "health",
+                "contact",
+                "nok",
+                "lang",
+                "dismiss"
+            ],
+            "properties": {
+                "overall": {
+                    "$id": "#/properties/progress/properties/overall",
+                    "type": "integer",
+                    "title": "The overall schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        0
+                    ]
+                },
+                "health": {
+                    "$id": "#/properties/progress/properties/health",
+                    "type": "integer",
+                    "title": "The health schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        0
+                    ]
+                },
+                "contact": {
+                    "$id": "#/properties/progress/properties/contact",
+                    "type": "integer",
+                    "title": "The contact schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        0
+                    ]
+                },
+                "nok": {
+                    "$id": "#/properties/progress/properties/nok",
+                    "type": "integer",
+                    "title": "The nok schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        0
+                    ]
+                },
+                "lang": {
+                    "$id": "#/properties/progress/properties/lang",
+                    "type": "integer",
+                    "title": "The lang schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        100
+                    ]
+                },
+                "dismiss": {
+                    "$id": "#/properties/progress/properties/dismiss",
+                    "type": "boolean",
+                    "title": "The dismiss schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": false,
+                    "examples": [
+                        false
+                    ]
+                }
+            },
+            "additionalProperties": true
+        }
+    },
+    "additionalProperties": true
+}

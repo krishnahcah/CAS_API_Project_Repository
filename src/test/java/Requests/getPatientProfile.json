@@ -1,0 +1,40 @@
+{
+    "nok": {
+        "first_name": "",
+        "last_name": "",
+        "relation_id": 0,
+        "program_nok": false,
+        "patient_nok": false,
+        "relation": "",
+        "mobile": ""
+    },
+    "health": {
+        "height": 0,
+        "weight": 0,
+        "waist_size": 0,
+        "daily_activity": 0,
+        "dob": ""
+    },
+    "contact": {
+        "alternate_number": "",
+        "state_id": 0,
+        "state": "",
+        "city_id": 0,
+        "email": "",
+        "city": "",
+        "address": "",
+        "locality": "",
+        "pincode": 0
+    },
+    "lang": {
+        "lang_id": 1
+    },
+    "progress": {
+        "overall": 0,
+        "health": 0,
+        "contact": 0,
+        "nok": 0,
+        "lang": 100,
+        "dismiss": false
+    }
+}

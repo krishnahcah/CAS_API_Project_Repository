@@ -1,0 +1,169 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "examples": [
+        {
+            "relations": [
+                {
+                    "relation_id": 19,
+                    "title": "Aunt"
+                },
+                {
+                    "relation_id": 7,
+                    "title": "Brother"
+                },
+                {
+                    "relation_id": 15,
+                    "title": "Cousin"
+                },
+                {
+                    "relation_id": 4,
+                    "title": "Daughter"
+                },
+                {
+                    "relation_id": 10,
+                    "title": "Daughter-in-Law"
+                },
+                {
+                    "relation_id": 5,
+                    "title": "Father"
+                },
+                {
+                    "relation_id": 12,
+                    "title": "Grand-Daughter"
+                },
+                {
+                    "relation_id": 16,
+                    "title": "Grand-Father"
+                },
+                {
+                    "relation_id": 17,
+                    "title": "Grand-Mother"
+                },
+                {
+                    "relation_id": 11,
+                    "title": "Grand-Son"
+                },
+                {
+                    "relation_id": 1,
+                    "title": "Husband"
+                },
+                {
+                    "relation_id": 20,
+                    "title": "Legal Guardian"
+                },
+                {
+                    "relation_id": 6,
+                    "title": "Mother"
+                },
+                {
+                    "relation_id": 14,
+                    "title": "Neice"
+                },
+                {
+                    "relation_id": 13,
+                    "title": "Nephew"
+                },
+                {
+                    "relation_id": 21,
+                    "title": "Other"
+                },
+                {
+                    "relation_id": 8,
+                    "title": "Sister"
+                },
+                {
+                    "relation_id": 3,
+                    "title": "Son"
+                },
+                {
+                    "relation_id": 9,
+                    "title": "Son-in-Law"
+                },
+                {
+                    "relation_id": 18,
+                    "title": "Uncle"
+                },
+                {
+                    "relation_id": 2,
+                    "title": "Wife"
+                }
+            ]
+        }
+    ],
+    "required": [
+        "relations"
+    ],
+    "properties": {
+        "relations": {
+            "$id": "#/properties/relations",
+            "type": "array",
+            "title": "The relations schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": [],
+            "examples": [
+                [
+                    {
+                        "relation_id": 19,
+                        "title": "Aunt"
+                    },
+                    {
+                        "relation_id": 7,
+                        "title": "Brother"
+                    }
+                ]
+            ],
+            "additionalItems": true,
+            "items": {
+                "$id": "#/properties/relations/items",
+                "anyOf": [
+                    {
+                        "$id": "#/properties/relations/items/anyOf/0",
+                        "type": "object",
+                        "title": "The first anyOf schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": {},
+                        "examples": [
+                            {
+                                "relation_id": 19,
+                                "title": "Aunt"
+                            }
+                        ],
+                        "required": [
+                            "relation_id",
+                            "title"
+                        ],
+                        "properties": {
+                            "relation_id": {
+                                "$id": "#/properties/relations/items/anyOf/0/properties/relation_id",
+                                "type": "integer",
+                                "title": "The relation_id schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": 0,
+                                "examples": [
+                                    19
+                                ]
+                            },
+                            "title": {
+                                "$id": "#/properties/relations/items/anyOf/0/properties/title",
+                                "type": "string",
+                                "title": "The title schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "Aunt"
+                                ]
+                            }
+                        },
+                        "additionalProperties": true
+                    }
+                ]
+            }
+        }
+    },
+    "additionalProperties": true
+}

@@ -1,0 +1,23 @@
+{
+    "health": {
+        "height": 5,
+        "weight": 65,
+        "dob": "1991-02-20",
+        "waist_size": 32,
+        "daily_activity": 2
+    },
+    "contact": {
+        "alternate_number": 734345,
+        "state_id": 3,
+        "email": "kochharjatin55@gmail.com",
+        "city_id": 1,
+        "address": "gsdgghfsdhde",
+        "pincode": 334535
+    },
+    "nok": {
+        "first_name": "k",
+        "last_name": "k",
+        "relation_id": 1,
+        "mobile": "4543435445"
+    }
+}

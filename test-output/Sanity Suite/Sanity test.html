@@ -1,0 +1,279 @@
+<html>
+<head>
+<title>TestNG:  Sanity test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Sanity test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>40/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Mar 01 09:27:34 IST 2021</td>
+</tr>
+<tr><td>Total time:</td><td>60 seconds (60363 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='CAS_API.CaretakerRelations_TCs.TC_CareTaker_Invalid_Auth_Info.CheckCareTakerResponseWithInvalidAuth()'><b>CheckCareTakerResponseWithInvalidAuth</b><br>Test class: CAS_API.CaretakerRelations_TCs.TC_CareTaker_Invalid_Auth_Info</td>
+<td></td>
+<td>0</td>
+<td>CAS_API.CaretakerRelations_TCs.TC_CareTaker_Invalid_Auth_Info@5fbdfdcf</td></tr>
+<tr>
+<td title='CAS_API.CaretakerRelations_TCs.TC_CareTaker_Invalid_Auth_Info.CheckCareTakerResponseWithMissingAuth()'><b>CheckCareTakerResponseWithMissingAuth</b><br>Test class: CAS_API.CaretakerRelations_TCs.TC_CareTaker_Invalid_Auth_Info</td>
+<td></td>
+<td>0</td>
+<td>CAS_API.CaretakerRelations_TCs.TC_CareTaker_Invalid_Auth_Info@5fbdfdcf</td></tr>
+<tr>
+<td title='CAS_API.CaretakerRelations_TCs.TC_CareTaker_Valid_Auth_Info.CheckCareTakerResponseWithValidAuth()'><b>CheckCareTakerResponseWithValidAuth</b><br>Test class: CAS_API.CaretakerRelations_TCs.TC_CareTaker_Valid_Auth_Info</td>
+<td></td>
+<td>1</td>
+<td>CAS_API.CaretakerRelations_TCs.TC_CareTaker_Valid_Auth_Info@505fc5a4</td></tr>
+<tr>
+<td title='CAS_API.Cities_TCs.TC_City_Invalid_Auth_Info.CheckCityResponseWithInvalidAuth()'><b>CheckCityResponseWithInvalidAuth</b><br>Test class: CAS_API.Cities_TCs.TC_City_Invalid_Auth_Info</td>
+<td></td>
+<td>0</td>
+<td>CAS_API.Cities_TCs.TC_City_Invalid_Auth_Info@2a54a73f</td></tr>
+<tr>
+<td title='CAS_API.Cities_TCs.TC_City_Invalid_Auth_Info.CheckCityResponseWithNoAuth()'><b>CheckCityResponseWithNoAuth</b><br>Test class: CAS_API.Cities_TCs.TC_City_Invalid_Auth_Info</td>
+<td></td>
+<td>0</td>
+<td>CAS_API.Cities_TCs.TC_City_Invalid_Auth_Info@2a54a73f</td></tr>
+<tr>
+<td title='CAS_API.Cities_TCs.TC_City_Valid_Auth_Info.CheckCityResponseWithValidAuth()'><b>CheckCityResponseWithValidAuth</b><br>Test class: CAS_API.Cities_TCs.TC_City_Valid_Auth_Info</td>
+<td></td>
+<td>0</td>
+<td>CAS_API.Cities_TCs.TC_City_Valid_Auth_Info@71238fc2</td></tr>
+<tr>
+<td title='CAS_API.Patient_Details.Patient_Profile_TCs.TC_GetPatientProfile_Valid_Auth_Info.CheckCityResponseWithValidAuth()'><b>CheckCityResponseWithValidAuth</b><br>Test class: CAS_API.Patient_Details.Patient_Profile_TCs.TC_GetPatientProfile_Valid_Auth_Info</td>
+<td></td>
+<td>0</td>
+<td>CAS_API.Patient_Details.Patient_Profile_TCs.TC_GetPatientProfile_Valid_Auth_Info@16610890</td></tr>
+<tr>
+<td title='CAS_API.States_TCs.TC_States_Invalid_Auth_Info.CheckStatesResponseWithInvalidAuth()'><b>CheckStatesResponseWithInvalidAuth</b><br>Test class: CAS_API.States_TCs.TC_States_Invalid_Auth_Info</td>
+<td></td>
+<td>0</td>
+<td>CAS_API.States_TCs.TC_States_Invalid_Auth_Info@fa49800</td></tr>
+<tr>
+<td title='CAS_API.States_TCs.TC_States_Invalid_Auth_Info.CheckStatesResponseWithMissingAuth()'><b>CheckStatesResponseWithMissingAuth</b><br>Test class: CAS_API.States_TCs.TC_States_Invalid_Auth_Info</td>
+<td></td>
+<td>0</td>
+<td>CAS_API.States_TCs.TC_States_Invalid_Auth_Info@fa49800</td></tr>
+<tr>
+<td title='CAS_API.States_TCs.TC_States_Valid_Auth_Info.CheckStatesResponseWithValidAuth()'><b>CheckStatesResponseWithValidAuth</b><br>Test class: CAS_API.States_TCs.TC_States_Valid_Auth_Info</td>
+<td></td>
+<td>0</td>
+<td>CAS_API.States_TCs.TC_States_Valid_Auth_Info@662b4c69</td></tr>
+<tr>
+<td title='CAS_API.Home.TC_Home_Invalid_Auth_Info.GetHome_CheckResponseWithInvalidAuth()'><b>GetHome_CheckResponseWithInvalidAuth</b><br>Test class: CAS_API.Home.TC_Home_Invalid_Auth_Info</td>
+<td></td>
+<td>3</td>
+<td>CAS_API.Home.TC_Home_Invalid_Auth_Info@67c33749</td></tr>
+<tr>
+<td title='CAS_API.Home.TC_Home_Invalid_Auth_Info.GetHome_CheckResponseWithNoAuth()'><b>GetHome_CheckResponseWithNoAuth</b><br>Test class: CAS_API.Home.TC_Home_Invalid_Auth_Info</td>
+<td></td>
+<td>0</td>
+<td>CAS_API.Home.TC_Home_Invalid_Auth_Info@67c33749</td></tr>
+<tr>
+<td title='CAS_API.Home.TC_Home_Valid_Auth_Info.GetHome_CheckResponseWithValidAuth()'><b>GetHome_CheckResponseWithValidAuth</b><br>Test class: CAS_API.Home.TC_Home_Valid_Auth_Info</td>
+<td></td>
+<td>0</td>
+<td>CAS_API.Home.TC_Home_Valid_Auth_Info@fba92d3</td></tr>
+<tr>
+<td title='CAS_API.Patient_Details.Patient_Program_TCs.TC_PatientPrograms_Invalid_Auth_Info.GetPatientPrograms_CheckResponseWithInvalidAuth()'><b>GetPatientPrograms_CheckResponseWithInvalidAuth</b><br>Test class: CAS_API.Patient_Details.Patient_Program_TCs.TC_PatientPrograms_Invalid_Auth_Info</td>
+<td></td>
+<td>0</td>
+<td>CAS_API.Patient_Details.Patient_Program_TCs.TC_PatientPrograms_Invalid_Auth_Info@71def8f8</td></tr>
+<tr>
+<td title='CAS_API.Patient_Details.Patient_Program_TCs.TC_PatientPrograms_Invalid_Auth_Info.GetPatientPrograms_CheckResponseWithNoAuth()'><b>GetPatientPrograms_CheckResponseWithNoAuth</b><br>Test class: CAS_API.Patient_Details.Patient_Program_TCs.TC_PatientPrograms_Invalid_Auth_Info</td>
+<td></td>
+<td>0</td>
+<td>CAS_API.Patient_Details.Patient_Program_TCs.TC_PatientPrograms_Invalid_Auth_Info@71def8f8</td></tr>
+<tr>
+<td title='CAS_API.Patient_Details.Patient_Program_TCs.TC_PatientPrograms_Valid_Auth_Info.GetPatientPrograms_CheckResponseWithValidAuth()'><b>GetPatientPrograms_CheckResponseWithValidAuth</b><br>Test class: CAS_API.Patient_Details.Patient_Program_TCs.TC_PatientPrograms_Valid_Auth_Info</td>
+<td></td>
+<td>0</td>
+<td>CAS_API.Patient_Details.Patient_Program_TCs.TC_PatientPrograms_Valid_Auth_Info@383bfa16</td></tr>
+<tr>
+<td title='CAS_API.Patient_Details.Patient_Complete_Profile_TCs.TC_Patient_Complete_Profile_Invalid_Auth_Info.PostPatientCompleteProfile_CheckResponseWithInvalidAuth_InvalidPayload()'><b>PostPatientCompleteProfile_CheckResponseWithInvalidAuth_InvalidPayload</b><br>Test class: CAS_API.Patient_Details.Patient_Complete_Profile_TCs.TC_Patient_Complete_Profile_Invalid_Auth_Info<br>Parameters: {health={height=5, weight=65, dob=1991-56-20, waist_size=32, daily_activity=2}, nok={first_name=k, last_name=k, relation_id=1, mobile=4543435445}, contact={alternate_number=734345, state_id=3, email=kochharjatin55@gmail.com, city_id=1, address=gsdgghfsdhde, pincode=334535}}</td>
+<td></td>
+<td>0</td>
+<td>CAS_API.Patient_Details.Patient_Complete_Profile_TCs.TC_Patient_Complete_Profile_Invalid_Auth_Info@4efc180e</td></tr>
+<tr>
+<td title='CAS_API.Patient_Details.Patient_Complete_Profile_TCs.TC_Patient_Complete_Profile_Invalid_Auth_Info.PostPatientCompleteProfile_CheckResponseWithInvalidAuth_ValidPayload()'><b>PostPatientCompleteProfile_CheckResponseWithInvalidAuth_ValidPayload</b><br>Test class: CAS_API.Patient_Details.Patient_Complete_Profile_TCs.TC_Patient_Complete_Profile_Invalid_Auth_Info<br>Parameters: {health={height=5, weight=65, dob=1991-02-20, waist_size=32, daily_activity=2}, nok={first_name=k, last_name=k, relation_id=1, mobile=4543435445}, contact={alternate_number=734345, state_id=3, email=kochharjatin55@gmail.com, city_id=1, address=gsdgghfsdhde, pincode=334535}}</td>
+<td></td>
+<td>0</td>
+<td>CAS_API.Patient_Details.Patient_Complete_Profile_TCs.TC_Patient_Complete_Profile_Invalid_Auth_Info@4efc180e</td></tr>
+<tr>
+<td title='CAS_API.Patient_Details.Patient_Complete_Profile_TCs.TC_Patient_Complete_Profile_Invalid_Auth_Info.PostPatientCompleteProfile_CheckResponseWithNoAuth_ValidPayload()'><b>PostPatientCompleteProfile_CheckResponseWithNoAuth_ValidPayload</b><br>Test class: CAS_API.Patient_Details.Patient_Complete_Profile_TCs.TC_Patient_Complete_Profile_Invalid_Auth_Info<br>Parameters: {health={height=5, weight=65, dob=1991-02-20, waist_size=32, daily_activity=2}, nok={first_name=k, last_name=k, relation_id=1, mobile=4543435445}, contact={alternate_number=734345, state_id=3, email=kochharjatin55@gmail.com, city_id=1, address=gsdgghfsdhde, pincode=334535}}</td>
+<td></td>
+<td>0</td>
+<td>CAS_API.Patient_Details.Patient_Complete_Profile_TCs.TC_Patient_Complete_Profile_Invalid_Auth_Info@4efc180e</td></tr>
+<tr>
+<td title='CAS_API.Patient_Details.ProfilePicture_TCs.TC_ProfilePicture_Invalid_Auth_Info.UploadProfilePicture_CheckResponseWithInvalidAuth()'><b>UploadProfilePicture_CheckResponseWithInvalidAuth</b><br>Test class: CAS_API.Patient_Details.ProfilePicture_TCs.TC_ProfilePicture_Invalid_Auth_Info</td>
+<td></td>
+<td>1</td>
+<td>CAS_API.Patient_Details.ProfilePicture_TCs.TC_ProfilePicture_Invalid_Auth_Info@4d465b11</td></tr>
+<tr>
+<td title='CAS_API.Patient_Details.ProfilePicture_TCs.TC_ProfilePicture_Invalid_Auth_Info.UploadProfilePicture_CheckResponseWithNoAuth()'><b>UploadProfilePicture_CheckResponseWithNoAuth</b><br>Test class: CAS_API.Patient_Details.ProfilePicture_TCs.TC_ProfilePicture_Invalid_Auth_Info</td>
+<td></td>
+<td>1</td>
+<td>CAS_API.Patient_Details.ProfilePicture_TCs.TC_ProfilePicture_Invalid_Auth_Info@4d465b11</td></tr>
+<tr>
+<td title='CAS_API.Patient_Details.ProfilePicture_TCs.TC_ProfilePicture_Valid_Auth_Info.UploadProfilePicture_CheckResponseWithValidAuth_InvalidPDFFile()'><b>UploadProfilePicture_CheckResponseWithValidAuth_InvalidPDFFile</b><br>Test class: CAS_API.Patient_Details.ProfilePicture_TCs.TC_ProfilePicture_Valid_Auth_Info</td>
+<td></td>
+<td>0</td>
+<td>CAS_API.Patient_Details.ProfilePicture_TCs.TC_ProfilePicture_Valid_Auth_Info@53fdffa1</td></tr>
+<tr>
+<td title='CAS_API.Patient_Details.ProfilePicture_TCs.TC_ProfilePicture_Valid_Auth_Info.UploadProfilePicture_CheckResponseWithValidAuth_JPEGImage()'><b>UploadProfilePicture_CheckResponseWithValidAuth_JPEGImage</b><br>Test class: CAS_API.Patient_Details.ProfilePicture_TCs.TC_ProfilePicture_Valid_Auth_Info</td>
+<td></td>
+<td>1</td>
+<td>CAS_API.Patient_Details.ProfilePicture_TCs.TC_ProfilePicture_Valid_Auth_Info@53fdffa1</td></tr>
+<tr>
+<td title='CAS_API.Patient_Details.ProfilePicture_TCs.TC_ProfilePicture_Valid_Auth_Info.UploadProfilePicture_CheckResponseWithValidAuth_PNGImage()'><b>UploadProfilePicture_CheckResponseWithValidAuth_PNGImage</b><br>Test class: CAS_API.Patient_Details.ProfilePicture_TCs.TC_ProfilePicture_Valid_Auth_Info</td>
+<td></td>
+<td>0</td>
+<td>CAS_API.Patient_Details.ProfilePicture_TCs.TC_ProfilePicture_Valid_Auth_Info@53fdffa1</td></tr>
+<tr>
+<td title='CAS_API.Care_TCs.TC_Care_Lead_Invalid_Auth_Info.checkLeadResponseWithInvalidAuth_EmptyPayload()'><b>checkLeadResponseWithInvalidAuth_EmptyPayload</b><br>Test class: CAS_API.Care_TCs.TC_Care_Lead_Invalid_Auth_Info<br>Parameters: {}</td>
+<td></td>
+<td>1</td>
+<td>CAS_API.Care_TCs.TC_Care_Lead_Invalid_Auth_Info@3d6f0054</td></tr>
+<tr>
+<td title='CAS_API.Care_TCs.TC_Care_Lead_Invalid_Auth_Info.checkLeadResponseWithInvalidAuth_ValidPayload()'><b>checkLeadResponseWithInvalidAuth_ValidPayload</b><br>Test class: CAS_API.Care_TCs.TC_Care_Lead_Invalid_Auth_Info<br>Parameters: {lead=Lab Test}</td>
+<td></td>
+<td>0</td>
+<td>CAS_API.Care_TCs.TC_Care_Lead_Invalid_Auth_Info@3d6f0054</td></tr>
+<tr>
+<td title='CAS_API.Care_TCs.TC_Care_Lead_Invalid_Auth_Info.checkLeadResponseWithNoAuth_ValidPayload()'><b>checkLeadResponseWithNoAuth_ValidPayload</b><br>Test class: CAS_API.Care_TCs.TC_Care_Lead_Invalid_Auth_Info<br>Parameters: {lead=Lab Test}</td>
+<td></td>
+<td>0</td>
+<td>CAS_API.Care_TCs.TC_Care_Lead_Invalid_Auth_Info@3d6f0054</td></tr>
+<tr>
+<td title='CAS_API.Care_TCs.TC_Care_Lead_Valid_Auth_Info.checkLeadResponseWithValidAuth_EmptyPayload()'><b>checkLeadResponseWithValidAuth_EmptyPayload</b><br>Test class: CAS_API.Care_TCs.TC_Care_Lead_Valid_Auth_Info<br>Parameters: {}</td>
+<td></td>
+<td>0</td>
+<td>CAS_API.Care_TCs.TC_Care_Lead_Valid_Auth_Info@16a0ee18</td></tr>
+<tr>
+<td title='CAS_API.Care_TCs.TC_Care_Lead_Valid_Auth_Info.checkLeadResponseWithValidAuth_ValidPayload()'><b>checkLeadResponseWithValidAuth_ValidPayload</b><br>Test class: CAS_API.Care_TCs.TC_Care_Lead_Valid_Auth_Info<br>Parameters: {lead=Lab Test}</td>
+<td></td>
+<td>25</td>
+<td>CAS_API.Care_TCs.TC_Care_Lead_Valid_Auth_Info@16a0ee18</td></tr>
+<tr>
+<td title='CAS_API.Patient_Details.Patient_Profile_TCs.TC_GetPatientProfile_Invalid_Info.getPatientProfile_CheckResponseWithInvalidAuth()'><b>getPatientProfile_CheckResponseWithInvalidAuth</b><br>Test class: CAS_API.Patient_Details.Patient_Profile_TCs.TC_GetPatientProfile_Invalid_Info</td>
+<td></td>
+<td>0</td>
+<td>CAS_API.Patient_Details.Patient_Profile_TCs.TC_GetPatientProfile_Invalid_Info@3bf9ce3e</td></tr>
+<tr>
+<td title='CAS_API.Patient_Details.Patient_Profile_TCs.TC_GetPatientProfile_Invalid_Info.getPatientProfile_CheckResponseWithNoAuth()'><b>getPatientProfile_CheckResponseWithNoAuth</b><br>Test class: CAS_API.Patient_Details.Patient_Profile_TCs.TC_GetPatientProfile_Invalid_Info</td>
+<td></td>
+<td>0</td>
+<td>CAS_API.Patient_Details.Patient_Profile_TCs.TC_GetPatientProfile_Invalid_Info@3bf9ce3e</td></tr>
+<tr>
+<td title='CAS_API.Patient_Details.Patient_Login_TCs.TC_PatientLogin_Invalid_Auth_Info.patientLogin_CheckResponseWithInvalidAuth_InvalidPayload()'><b>patientLogin_CheckResponseWithInvalidAuth_InvalidPayload</b><br>Test class: CAS_API.Patient_Details.Patient_Login_TCs.TC_PatientLogin_Invalid_Auth_Info<br>Parameters: {device_info={app_version=1.0.5, device=iPhone 11 Pro Max, os_version=13.7, phone_make=IPHONE, push_token=}, program_id=null}</td>
+<td></td>
+<td>0</td>
+<td>CAS_API.Patient_Details.Patient_Login_TCs.TC_PatientLogin_Invalid_Auth_Info@25084a1e</td></tr>
+<tr>
+<td title='CAS_API.Patient_Details.Patient_Login_TCs.TC_PatientLogin_Invalid_Auth_Info.patientLogin_CheckResponseWithInvalidAuth_ValidPayload()'><b>patientLogin_CheckResponseWithInvalidAuth_ValidPayload</b><br>Test class: CAS_API.Patient_Details.Patient_Login_TCs.TC_PatientLogin_Invalid_Auth_Info<br>Parameters: {device_info={app_version=1.0.5, device=iPhone 11 Pro Max, os_version=13.7, phone_make=IPHONE, push_token=}, program_id=2}</td>
+<td></td>
+<td>0</td>
+<td>CAS_API.Patient_Details.Patient_Login_TCs.TC_PatientLogin_Invalid_Auth_Info@25084a1e</td></tr>
+<tr>
+<td title='CAS_API.Patient_Details.Patient_Login_TCs.TC_PatientLogin_Invalid_Auth_Info.patientLogin_CheckResponseWithNoAuth_ValidPayload()'><b>patientLogin_CheckResponseWithNoAuth_ValidPayload</b><br>Test class: CAS_API.Patient_Details.Patient_Login_TCs.TC_PatientLogin_Invalid_Auth_Info<br>Parameters: {device_info={app_version=1.0.5, device=iPhone 11 Pro Max, os_version=13.7, phone_make=IPHONE, push_token=}, program_id=2}</td>
+<td></td>
+<td>0</td>
+<td>CAS_API.Patient_Details.Patient_Login_TCs.TC_PatientLogin_Invalid_Auth_Info@25084a1e</td></tr>
+<tr>
+<td title='CAS_API.Patient_Details.Patient_Login_TCs.TC_PatientLogin_Valid_Auth_And_Data_Info.patientLogin_CheckResponseWithValidAuth_InvalidPayload_Missing_ProgramID()'><b>patientLogin_CheckResponseWithValidAuth_InvalidPayload_Missing_ProgramID</b><br>Test class: CAS_API.Patient_Details.Patient_Login_TCs.TC_PatientLogin_Valid_Auth_And_Data_Info<br>Parameters: {device_info={app_version=1.0.5, device=iPhone 11 Pro Max, os_version=13.7, phone_make=IPHONE, push_token=}, program_id=null}</td>
+<td></td>
+<td>0</td>
+<td>CAS_API.Patient_Details.Patient_Login_TCs.TC_PatientLogin_Valid_Auth_And_Data_Info@156b88f5</td></tr>
+<tr>
+<td title='CAS_API.Patient_Details.Patient_Login_TCs.TC_PatientLogin_Valid_Auth_And_Data_Info.patientLogin_CheckResponseWithValidAuth_ValidPayload()'><b>patientLogin_CheckResponseWithValidAuth_ValidPayload</b><br>Test class: CAS_API.Patient_Details.Patient_Login_TCs.TC_PatientLogin_Valid_Auth_And_Data_Info<br>Parameters: {device_info={app_version=1.0.5, device=iPhone 11 Pro Max, os_version=13.7, phone_make=IPHONE, push_token=}, program_id=2}</td>
+<td></td>
+<td>1</td>
+<td>CAS_API.Patient_Details.Patient_Login_TCs.TC_PatientLogin_Valid_Auth_And_Data_Info@156b88f5</td></tr>
+<tr>
+<td title='CAS_API.Patient_Details.Patient_Login_TCs.TC_PatientLogin_Valid_Auth_And_Data_Info.patientLogin_CheckResponseWithValidAuth_WithInvalidPayload_Invalid_ProgramID()'><b>patientLogin_CheckResponseWithValidAuth_WithInvalidPayload_Invalid_ProgramID</b><br>Test class: CAS_API.Patient_Details.Patient_Login_TCs.TC_PatientLogin_Valid_Auth_And_Data_Info<br>Parameters: {device_info={app_version=1.0.5, device=iPhone 11 Pro Max, os_version=13.7, phone_make=IPHONE, push_token=}, program_id=111111}</td>
+<td></td>
+<td>0</td>
+<td>CAS_API.Patient_Details.Patient_Login_TCs.TC_PatientLogin_Valid_Auth_And_Data_Info@156b88f5</td></tr>
+<tr>
+<td title='CAS_API.Patient_Details.Patient_Login_TCs.TC_PatientLogin_Valid_Auth_And_Data_Info.patientLogin_CheckResponseWithValidAuth_WithInvalidPayload_Missing_DeviceInfo()'><b>patientLogin_CheckResponseWithValidAuth_WithInvalidPayload_Missing_DeviceInfo</b><br>Test class: CAS_API.Patient_Details.Patient_Login_TCs.TC_PatientLogin_Valid_Auth_And_Data_Info<br>Parameters: {device_info={}, program_id=2}</td>
+<td></td>
+<td>0</td>
+<td>CAS_API.Patient_Details.Patient_Login_TCs.TC_PatientLogin_Valid_Auth_And_Data_Info@156b88f5</td></tr>
+<tr>
+<td title='CAS_API.Patient_Details.Patient_Complete_Profile_TCs.TC_Patient_Complete_Profile_Valid_Auth_And_Data_Info.postPatientCompleteProfile_CheckResponseWithValidAuth_InValidPayload()'><b>postPatientCompleteProfile_CheckResponseWithValidAuth_InValidPayload</b><br>Test class: CAS_API.Patient_Details.Patient_Complete_Profile_TCs.TC_Patient_Complete_Profile_Valid_Auth_And_Data_Info<br>Parameters: {health={height=5, weight=65, dob=1991-56-20, waist_size=32, daily_activity=2}, nok={first_name=k, last_name=k, relation_id=1, mobile=4543435445}, contact={alternate_number=734345, state_id=3, email=kochharjatin55@gmail.com, city_id=1, address=gsdgghfsdhde, pincode=334535}}</td>
+<td></td>
+<td>0</td>
+<td>CAS_API.Patient_Details.Patient_Complete_Profile_TCs.TC_Patient_Complete_Profile_Valid_Auth_And_Data_Info@bd4dc25</td></tr>
+<tr>
+<td title='CAS_API.Patient_Details.Patient_Complete_Profile_TCs.TC_Patient_Complete_Profile_Valid_Auth_And_Data_Info.postPatientCompleteProfile_CheckResponseWithValidAuth_ValidPayload()'><b>postPatientCompleteProfile_CheckResponseWithValidAuth_ValidPayload</b><br>Test class: CAS_API.Patient_Details.Patient_Complete_Profile_TCs.TC_Patient_Complete_Profile_Valid_Auth_And_Data_Info<br>Parameters: {health={height=5, weight=65, dob=1991-02-20, waist_size=32, daily_activity=2}, nok={first_name=k, last_name=k, relation_id=1, mobile=4543435445}, contact={alternate_number=734345, state_id=3, email=kochharjatin55@gmail.com, city_id=1, address=gsdgghfsdhde, pincode=334535}}</td>
+<td></td>
+<td>1</td>
+<td>CAS_API.Patient_Details.Patient_Complete_Profile_TCs.TC_Patient_Complete_Profile_Valid_Auth_And_Data_Info@bd4dc25</td></tr>
+</table><p>
+</body>
+</html>

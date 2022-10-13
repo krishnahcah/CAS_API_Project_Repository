@@ -1,0 +1,435 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "examples": [
+        {
+            "personal": {
+                "first_name": "Jatin",
+                "last_name": "Kochhar",
+                "gender": "Male",
+                "email": "kochharjatin55@gmail.com",
+                "mobile": "+91 9416274400",
+                "picture": "https://dev-hcah-cas-app.s3.ap-south-1.amazonaws.com/patient/profile/pictures/1614165494testimg1.jpg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAZ2CABGO7ILPLQNQK%2F20210224%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Date=20210224T173240Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Signature=305209cf288da6164276f28a400834d85b6c027c90ffe7e5d4957d503b39a0fe",
+                "dob": "1991-02-20",
+                "created_at": "2021-02-17 17:52:29"
+            },
+            "health": {
+                "height": 5,
+                "weight": 65,
+                "waist_size": 32,
+                "daily_activity": 2,
+                "stride": {
+                    "run": "81.1657",
+                    "walk": "101.457125"
+                },
+                "ideal_weight": 89.1001,
+                "patient_diet_plan": 2,
+                "total_calories": 2156,
+                "patient_activity_target_cal": -333.71603475000006,
+                "patient_type_id": 2,
+                "score_logic": 0
+            },
+            "progress": {
+                "overall": 95.24,
+                "health": 100,
+                "contact": 85.71,
+                "nok": 100,
+                "lang": 100,
+                "dismiss": true
+            }
+        }
+    ],
+    "required": [
+        "personal",
+        "health",
+        "progress"
+    ],
+    "properties": {
+        "personal": {
+            "$id": "#/properties/personal",
+            "type": "object",
+            "title": "The personal schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+                {
+                    "first_name": "Jatin",
+                    "last_name": "Kochhar",
+                    "gender": "Male",
+                    "email": "kochharjatin55@gmail.com",
+                    "mobile": "+91 9416274400",
+                    "picture": "https://dev-hcah-cas-app.s3.ap-south-1.amazonaws.com/patient/profile/pictures/1614165494testimg1.jpg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAZ2CABGO7ILPLQNQK%2F20210224%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Date=20210224T173240Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Signature=305209cf288da6164276f28a400834d85b6c027c90ffe7e5d4957d503b39a0fe",
+                    "dob": "1991-02-20",
+                    "created_at": "2021-02-17 17:52:29"
+                }
+            ],
+            "required": [
+                "first_name",
+                "last_name",
+                "gender",
+                "email",
+                "mobile",
+                "picture",
+                "dob",
+                "created_at"
+            ],
+            "properties": {
+                "first_name": {
+                    "$id": "#/properties/personal/properties/first_name",
+                    "type": "string",
+                    "title": "The first_name schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "Jatin"
+                    ]
+                },
+                "last_name": {
+                    "$id": "#/properties/personal/properties/last_name",
+                    "type": "string",
+                    "title": "The last_name schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "Kochhar"
+                    ]
+                },
+                "gender": {
+                    "$id": "#/properties/personal/properties/gender",
+                    "type": "string",
+                    "title": "The gender schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "Male"
+                    ]
+                },
+                "email": {
+                    "$id": "#/properties/personal/properties/email",
+                    "type": "string",
+                    "title": "The email schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "kochharjatin55@gmail.com"
+                    ]
+                },
+                "mobile": {
+                    "$id": "#/properties/personal/properties/mobile",
+                    "type": "string",
+                    "title": "The mobile schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "+91 9416274400"
+                    ]
+                },
+                "picture": {
+                    "$id": "#/properties/personal/properties/picture",
+                    "type": "string",
+                    "title": "The picture schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "https://dev-hcah-cas-app.s3.ap-south-1.amazonaws.com/patient/profile/pictures/1614165494testimg1.jpg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAZ2CABGO7ILPLQNQK%2F20210224%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Date=20210224T173240Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Signature=305209cf288da6164276f28a400834d85b6c027c90ffe7e5d4957d503b39a0fe"
+                    ]
+                },
+                "dob": {
+                    "$id": "#/properties/personal/properties/dob",
+                    "type": "string",
+                    "title": "The dob schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "1991-02-20"
+                    ]
+                },
+                "created_at": {
+                    "$id": "#/properties/personal/properties/created_at",
+                    "type": "string",
+                    "title": "The created_at schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "2021-02-17 17:52:29"
+                    ]
+                }
+            },
+            "additionalProperties": true
+        },
+        "health": {
+            "$id": "#/properties/health",
+            "type": "object",
+            "title": "The health schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+                {
+                    "height": 5,
+                    "weight": 65,
+                    "waist_size": 32,
+                    "daily_activity": 2,
+                    "stride": {
+                        "run": "81.1657",
+                        "walk": "101.457125"
+                    },
+                    "ideal_weight": 89.1001,
+                    "patient_diet_plan": 2,
+                    "total_calories": 2156,
+                    "patient_activity_target_cal": -333.71603475000006,
+                    "patient_type_id": 2,
+                    "score_logic": 0
+                }
+            ],
+            "required": [
+                "height",
+                "weight",
+                "waist_size",
+                "daily_activity",
+                "stride",
+                "ideal_weight",
+                "patient_diet_plan",
+                "total_calories",
+                "patient_activity_target_cal",
+                "patient_type_id",
+                "score_logic"
+            ],
+            "properties": {
+                "height": {
+                    "$id": "#/properties/health/properties/height",
+                    "type": "integer",
+                    "title": "The height schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        5
+                    ]
+                },
+                "weight": {
+                    "$id": "#/properties/health/properties/weight",
+                    "type": "integer",
+                    "title": "The weight schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        65
+                    ]
+                },
+                "waist_size": {
+                    "$id": "#/properties/health/properties/waist_size",
+                    "type": "integer",
+                    "title": "The waist_size schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        32
+                    ]
+                },
+                "daily_activity": {
+                    "$id": "#/properties/health/properties/daily_activity",
+                    "type": "integer",
+                    "title": "The daily_activity schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        2
+                    ]
+                },
+                "stride": {
+                    "$id": "#/properties/health/properties/stride",
+                    "type": "object",
+                    "title": "The stride schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": {},
+                    "examples": [
+                        {
+                            "run": "81.1657",
+                            "walk": "101.457125"
+                        }
+                    ],
+                    "required": [
+                        "run",
+                        "walk"
+                    ],
+                    "properties": {
+                        "run": {
+                            "$id": "#/properties/health/properties/stride/properties/run",
+                            "type": "string",
+                            "title": "The run schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "81.1657"
+                            ]
+                        },
+                        "walk": {
+                            "$id": "#/properties/health/properties/stride/properties/walk",
+                            "type": "string",
+                            "title": "The walk schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "101.457125"
+                            ]
+                        }
+                    },
+                    "additionalProperties": true
+                },
+                "ideal_weight": {
+                    "$id": "#/properties/health/properties/ideal_weight",
+                    "type": "number",
+                    "title": "The ideal_weight schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0.0,
+                    "examples": [
+                        89.1001
+                    ]
+                },
+                "patient_diet_plan": {
+                    "$id": "#/properties/health/properties/patient_diet_plan",
+                    "type": "integer",
+                    "title": "The patient_diet_plan schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        2
+                    ]
+                },
+                "total_calories": {
+                    "$id": "#/properties/health/properties/total_calories",
+                    "type": "integer",
+                    "title": "The total_calories schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        2156
+                    ]
+                },
+                "patient_activity_target_cal": {
+                    "$id": "#/properties/health/properties/patient_activity_target_cal",
+                    "type": "number",
+                    "title": "The patient_activity_target_cal schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0.0,
+                    "examples": [
+                        -333.71603475000006
+                    ]
+                },
+                "patient_type_id": {
+                    "$id": "#/properties/health/properties/patient_type_id",
+                    "type": "integer",
+                    "title": "The patient_type_id schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        2
+                    ]
+                },
+                "score_logic": {
+                    "$id": "#/properties/health/properties/score_logic",
+                    "type": "integer",
+                    "title": "The score_logic schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        0
+                    ]
+                }
+            },
+            "additionalProperties": true
+        },
+        "progress": {
+            "$id": "#/properties/progress",
+            "type": "object",
+            "title": "The progress schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+                {
+                    "overall": 95.24,
+                    "health": 100,
+                    "contact": 85.71,
+                    "nok": 100,
+                    "lang": 100,
+                    "dismiss": true
+                }
+            ],
+            "required": [
+                "overall",
+                "health",
+                "contact",
+                "nok",
+                "lang",
+                "dismiss"
+            ],
+            "properties": {
+                "overall": {
+                    "$id": "#/properties/progress/properties/overall",
+                    "type": "number",
+                    "title": "The overall schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0.0,
+                    "examples": [
+                        95.24
+                    ]
+                },
+                "health": {
+                    "$id": "#/properties/progress/properties/health",
+                    "type": "integer",
+                    "title": "The health schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        100
+                    ]
+                },
+                "contact": {
+                    "$id": "#/properties/progress/properties/contact",
+                    "type": "number",
+                    "title": "The contact schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0.0,
+                    "examples": [
+                        85.71
+                    ]
+                },
+                "nok": {
+                    "$id": "#/properties/progress/properties/nok",
+                    "type": "integer",
+                    "title": "The nok schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        100
+                    ]
+                },
+                "lang": {
+                    "$id": "#/properties/progress/properties/lang",
+                    "type": "integer",
+                    "title": "The lang schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        100
+                    ]
+                },
+                "dismiss": {
+                    "$id": "#/properties/progress/properties/dismiss",
+                    "type": "boolean",
+                    "title": "The dismiss schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": false,
+                    "examples": [
+                        true
+                    ]
+                }
+            },
+            "additionalProperties": true
+        }
+    },
+    "additionalProperties": true
+}

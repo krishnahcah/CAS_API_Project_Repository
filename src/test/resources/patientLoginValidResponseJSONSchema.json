@@ -1,0 +1,1016 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "examples": [
+        {
+            "user_info": {
+                "personal": {
+                    "first_name": "Jatin",
+                    "last_name": "Kochhar",
+                    "gender": "Male",
+                    "email": "",
+                    "mobile": "+91 9416274400",
+                    "picture": "https://dev-hcah-cas-app.s3.ap-south-1.amazonaws.com/patient/profile/pictures/1614165494testimg1.jpg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAZ2CABGO7ILPLQNQK%2F20210224%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Date=20210224T114728Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Signature=1a2c1ef6679cac7860fdff617d3a6e946a9e8d66525db865fb2afc7d3492327e",
+                    "dob": "",
+                    "created_at": "2021-02-17 17:52:29"
+                },
+                "health": {
+                    "height": 0,
+                    "weight": 0,
+                    "waist_size": 0,
+                    "daily_activity": 0,
+                    "stride": {
+                        "run": 0,
+                        "walk": 0
+                    },
+                    "ideal_weight": 0,
+                    "patient_diet_plan": 2,
+                    "total_calories": 0,
+                    "patient_activity_target_cal": 0,
+                    "patient_type_id": 2,
+                    "score_logic": 0
+                },
+                "jabber": {
+                    "host": "livechat.hcah.in",
+                    "id": "jatinkochhar24512",
+                    "password": "1613629350"
+                },
+                "app": {
+                    "access_token": "1158|XRnxF4sGYd7N6iI8sqVKlZeI2vuKK7zS7cA0R0Pp",
+                    "version": 1,
+                    "lang_id": 1,
+                    "currency": "₹",
+                    "cust_app_id": 24512,
+                    "hcah": {
+                        "account": "10435678",
+                        "token": "9464c2441872719fd8789d54e8e666443ed53e16a71f59e1e82a16fffd14052c"
+                    }
+                },
+                "coins": {
+                    "available": 0,
+                    "text": {
+                        "earn": "You have earned :HCAH_COINS: coins by using the :HCAH_ACTIVITY:",
+                        "redeem": "You have redeemed :HCAH_COINS: coins for this :HCAH_ACTIVITY:"
+                    }
+                },
+                "programs": [
+                    {
+                        "code": "LIPAGLYN",
+                        "service": "LIPAGLYN",
+                        "program_id": 2,
+                        "organization": "LIPAGLYN"
+                    }
+                ],
+                "chat_profiles": {
+                    "specialist": [],
+                    "bot": {
+                        "link": "https://c3.avaamo.com/web_channels/s-t-e78e670c-060e-4f21-9a18-46a9f3061b48/channel.html?theme=avm-blue",
+                        "type": 0
+                    }
+                }
+            },
+            "splash": {
+                "text": {
+                    "top": "Welcome to Aadhar!",
+                    "bottom": ""
+                },
+                "background": {
+                    "color": "#ffffff",
+                    "image": ""
+                },
+                "logo": ""
+            },
+            "benefit_pdf": "public/program_code/pdf_details/lipaglyn_benefits_optimized1593173707.pdf"
+        }
+    ],
+    "required": [
+        "user_info",
+        "splash",
+        "benefit_pdf"
+    ],
+    "properties": {
+        "user_info": {
+            "$id": "#/properties/user_info",
+            "type": "object",
+            "title": "The user_info schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+                {
+                    "personal": {
+                        "first_name": "Jatin",
+                        "last_name": "Kochhar",
+                        "gender": "Male",
+                        "email": "",
+                        "mobile": "+91 9416274400",
+                        "picture": "https://dev-hcah-cas-app.s3.ap-south-1.amazonaws.com/patient/profile/pictures/1614165494testimg1.jpg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAZ2CABGO7ILPLQNQK%2F20210224%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Date=20210224T114728Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Signature=1a2c1ef6679cac7860fdff617d3a6e946a9e8d66525db865fb2afc7d3492327e",
+                        "dob": "",
+                        "created_at": "2021-02-17 17:52:29"
+                    },
+                    "health": {
+                        "height": 0,
+                        "weight": 0,
+                        "waist_size": 0,
+                        "daily_activity": 0,
+                        "stride": {
+                            "run": 0,
+                            "walk": 0
+                        },
+                        "ideal_weight": 0,
+                        "patient_diet_plan": 2,
+                        "total_calories": 0,
+                        "patient_activity_target_cal": 0,
+                        "patient_type_id": 2,
+                        "score_logic": 0
+                    },
+                    "jabber": {
+                        "host": "livechat.hcah.in",
+                        "id": "jatinkochhar24512",
+                        "password": "1613629350"
+                    },
+                    "app": {
+                        "access_token": "1158|XRnxF4sGYd7N6iI8sqVKlZeI2vuKK7zS7cA0R0Pp",
+                        "version": 1,
+                        "lang_id": 1,
+                        "currency": "₹",
+                        "cust_app_id": 24512,
+                        "hcah": {
+                            "account": "10435678",
+                            "token": "9464c2441872719fd8789d54e8e666443ed53e16a71f59e1e82a16fffd14052c"
+                        }
+                    },
+                    "coins": {
+                        "available": 0,
+                        "text": {
+                            "earn": "You have earned :HCAH_COINS: coins by using the :HCAH_ACTIVITY:",
+                            "redeem": "You have redeemed :HCAH_COINS: coins for this :HCAH_ACTIVITY:"
+                        }
+                    },
+                    "programs": [
+                        {
+                            "code": "LIPAGLYN",
+                            "service": "LIPAGLYN",
+                            "program_id": 2,
+                            "organization": "LIPAGLYN"
+                        }
+                    ],
+                    "chat_profiles": {
+                        "specialist": [],
+                        "bot": {
+                            "link": "https://c3.avaamo.com/web_channels/s-t-e78e670c-060e-4f21-9a18-46a9f3061b48/channel.html?theme=avm-blue",
+                            "type": 0
+                        }
+                    }
+                }
+            ],
+            "required": [
+                "personal",
+                "health",
+                "jabber",
+                "app",
+                "coins",
+                "programs",
+                "chat_profiles"
+            ],
+            "properties": {
+                "personal": {
+                    "$id": "#/properties/user_info/properties/personal",
+                    "type": "object",
+                    "title": "The personal schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": {},
+                    "examples": [
+                        {
+                            "first_name": "Jatin",
+                            "last_name": "Kochhar",
+                            "gender": "Male",
+                            "email": "",
+                            "mobile": "+91 9416274400",
+                            "picture": "https://dev-hcah-cas-app.s3.ap-south-1.amazonaws.com/patient/profile/pictures/1614165494testimg1.jpg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAZ2CABGO7ILPLQNQK%2F20210224%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Date=20210224T114728Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Signature=1a2c1ef6679cac7860fdff617d3a6e946a9e8d66525db865fb2afc7d3492327e",
+                            "dob": "",
+                            "created_at": "2021-02-17 17:52:29"
+                        }
+                    ],
+                    "required": [
+                        "first_name",
+                        "last_name",
+                        "gender",
+                        "email",
+                        "mobile",
+                        "picture",
+                        "dob",
+                        "created_at"
+                    ],
+                    "properties": {
+                        "first_name": {
+                            "$id": "#/properties/user_info/properties/personal/properties/first_name",
+                            "type": "string",
+                            "title": "The first_name schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "Jatin"
+                            ]
+                        },
+                        "last_name": {
+                            "$id": "#/properties/user_info/properties/personal/properties/last_name",
+                            "type": "string",
+                            "title": "The last_name schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "Kochhar"
+                            ]
+                        },
+                        "gender": {
+                            "$id": "#/properties/user_info/properties/personal/properties/gender",
+                            "type": "string",
+                            "title": "The gender schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "Male"
+                            ]
+                        },
+                        "email": {
+                            "$id": "#/properties/user_info/properties/personal/properties/email",
+                            "type": "string",
+                            "title": "The email schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                ""
+                            ]
+                        },
+                        "mobile": {
+                            "$id": "#/properties/user_info/properties/personal/properties/mobile",
+                            "type": "string",
+                            "title": "The mobile schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "+91 9416274400"
+                            ]
+                        },
+                        "picture": {
+                            "$id": "#/properties/user_info/properties/personal/properties/picture",
+                            "type": "string",
+                            "title": "The picture schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "https://dev-hcah-cas-app.s3.ap-south-1.amazonaws.com/patient/profile/pictures/1614165494testimg1.jpg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAZ2CABGO7ILPLQNQK%2F20210224%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Date=20210224T114728Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Signature=1a2c1ef6679cac7860fdff617d3a6e946a9e8d66525db865fb2afc7d3492327e"
+                            ]
+                        },
+                        "dob": {
+                            "$id": "#/properties/user_info/properties/personal/properties/dob",
+                            "type": "string",
+                            "title": "The dob schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                ""
+                            ]
+                        },
+                        "created_at": {
+                            "$id": "#/properties/user_info/properties/personal/properties/created_at",
+                            "type": "string",
+                            "title": "The created_at schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "2021-02-17 17:52:29"
+                            ]
+                        }
+                    },
+                    "additionalProperties": true
+                },
+                "health": {
+                    "$id": "#/properties/user_info/properties/health",
+                    "type": "object",
+                    "title": "The health schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": {},
+                    "examples": [
+                        {
+                            "height": 0,
+                            "weight": 0,
+                            "waist_size": 0,
+                            "daily_activity": 0,
+                            "stride": {
+                                "run": 0,
+                                "walk": 0
+                            },
+                            "ideal_weight": 0,
+                            "patient_diet_plan": 2,
+                            "total_calories": 0,
+                            "patient_activity_target_cal": 0,
+                            "patient_type_id": 2,
+                            "score_logic": 0
+                        }
+                    ],
+                    "required": [
+                        "height",
+                        "weight",
+                        "waist_size",
+                        "daily_activity",
+                        "stride",
+                        "ideal_weight",
+                        "patient_diet_plan",
+                        "total_calories",
+                        "patient_activity_target_cal",
+                        "patient_type_id",
+                        "score_logic"
+                    ],
+                    "properties": {
+                        "height": {
+                            "$id": "#/properties/user_info/properties/health/properties/height",
+                            "type": "integer",
+                            "title": "The height schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": 0,
+                            "examples": [
+                                0
+                            ]
+                        },
+                        "weight": {
+                            "$id": "#/properties/user_info/properties/health/properties/weight",
+                            "type": "integer",
+                            "title": "The weight schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": 0,
+                            "examples": [
+                                0
+                            ]
+                        },
+                        "waist_size": {
+                            "$id": "#/properties/user_info/properties/health/properties/waist_size",
+                            "type": "integer",
+                            "title": "The waist_size schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": 0,
+                            "examples": [
+                                0
+                            ]
+                        },
+                        "daily_activity": {
+                            "$id": "#/properties/user_info/properties/health/properties/daily_activity",
+                            "type": "integer",
+                            "title": "The daily_activity schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": 0,
+                            "examples": [
+                                0
+                            ]
+                        },
+                        "stride": {
+                            "$id": "#/properties/user_info/properties/health/properties/stride",
+                            "type": "object",
+                            "title": "The stride schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": {},
+                            "examples": [
+                                {
+                                    "run": 0,
+                                    "walk": 0
+                                }
+                            ],
+                            "required": [
+                                "run",
+                                "walk"
+                            ],
+                            "properties": {
+                                "run": {
+                                    "$id": "#/properties/user_info/properties/health/properties/stride/properties/run",
+                                    "type": "integer",
+                                    "title": "The run schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": 0,
+                                    "examples": [
+                                        0
+                                    ]
+                                },
+                                "walk": {
+                                    "$id": "#/properties/user_info/properties/health/properties/stride/properties/walk",
+                                    "type": "integer",
+                                    "title": "The walk schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": 0,
+                                    "examples": [
+                                        0
+                                    ]
+                                }
+                            },
+                            "additionalProperties": true
+                        },
+                        "ideal_weight": {
+                            "$id": "#/properties/user_info/properties/health/properties/ideal_weight",
+                            "type": "integer",
+                            "title": "The ideal_weight schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": 0,
+                            "examples": [
+                                0
+                            ]
+                        },
+                        "patient_diet_plan": {
+                            "$id": "#/properties/user_info/properties/health/properties/patient_diet_plan",
+                            "type": "integer",
+                            "title": "The patient_diet_plan schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": 0,
+                            "examples": [
+                                2
+                            ]
+                        },
+                        "total_calories": {
+                            "$id": "#/properties/user_info/properties/health/properties/total_calories",
+                            "type": "integer",
+                            "title": "The total_calories schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": 0,
+                            "examples": [
+                                0
+                            ]
+                        },
+                        "patient_activity_target_cal": {
+                            "$id": "#/properties/user_info/properties/health/properties/patient_activity_target_cal",
+                            "type": "integer",
+                            "title": "The patient_activity_target_cal schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": 0,
+                            "examples": [
+                                0
+                            ]
+                        },
+                        "patient_type_id": {
+                            "$id": "#/properties/user_info/properties/health/properties/patient_type_id",
+                            "type": "integer",
+                            "title": "The patient_type_id schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": 0,
+                            "examples": [
+                                2
+                            ]
+                        },
+                        "score_logic": {
+                            "$id": "#/properties/user_info/properties/health/properties/score_logic",
+                            "type": "integer",
+                            "title": "The score_logic schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": 0,
+                            "examples": [
+                                0
+                            ]
+                        }
+                    },
+                    "additionalProperties": true
+                },
+                "jabber": {
+                    "$id": "#/properties/user_info/properties/jabber",
+                    "type": "object",
+                    "title": "The jabber schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": {},
+                    "examples": [
+                        {
+                            "host": "livechat.hcah.in",
+                            "id": "jatinkochhar24512",
+                            "password": "1613629350"
+                        }
+                    ],
+                    "required": [
+                        "host",
+                        "id",
+                        "password"
+                    ],
+                    "properties": {
+                        "host": {
+                            "$id": "#/properties/user_info/properties/jabber/properties/host",
+                            "type": "string",
+                            "title": "The host schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "livechat.hcah.in"
+                            ]
+                        },
+                        "id": {
+                            "$id": "#/properties/user_info/properties/jabber/properties/id",
+                            "type": "string",
+                            "title": "The id schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "jatinkochhar24512"
+                            ]
+                        },
+                        "password": {
+                            "$id": "#/properties/user_info/properties/jabber/properties/password",
+                            "type": "string",
+                            "title": "The password schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "1613629350"
+                            ]
+                        }
+                    },
+                    "additionalProperties": true
+                },
+                "app": {
+                    "$id": "#/properties/user_info/properties/app",
+                    "type": "object",
+                    "title": "The app schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": {},
+                    "examples": [
+                        {
+                            "access_token": "1158|XRnxF4sGYd7N6iI8sqVKlZeI2vuKK7zS7cA0R0Pp",
+                            "version": 1,
+                            "lang_id": 1,
+                            "currency": "₹",
+                            "cust_app_id": 24512,
+                            "hcah": {
+                                "account": "10435678",
+                                "token": "9464c2441872719fd8789d54e8e666443ed53e16a71f59e1e82a16fffd14052c"
+                            }
+                        }
+                    ],
+                    "required": [
+                        "access_token",
+                        "version",
+                        "lang_id",
+                        "currency",
+                        "cust_app_id",
+                        "hcah"
+                    ],
+                    "properties": {
+                        "access_token": {
+                            "$id": "#/properties/user_info/properties/app/properties/access_token",
+                            "type": "string",
+                            "title": "The access_token schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "1158|XRnxF4sGYd7N6iI8sqVKlZeI2vuKK7zS7cA0R0Pp"
+                            ]
+                        },
+                        "version": {
+                            "$id": "#/properties/user_info/properties/app/properties/version",
+                            "type": "integer",
+                            "title": "The version schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": 0,
+                            "examples": [
+                                1
+                            ]
+                        },
+                        "lang_id": {
+                            "$id": "#/properties/user_info/properties/app/properties/lang_id",
+                            "type": "integer",
+                            "title": "The lang_id schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": 0,
+                            "examples": [
+                                1
+                            ]
+                        },
+                        "currency": {
+                            "$id": "#/properties/user_info/properties/app/properties/currency",
+                            "type": "string",
+                            "title": "The currency schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "₹"
+                            ]
+                        },
+                        "cust_app_id": {
+                            "$id": "#/properties/user_info/properties/app/properties/cust_app_id",
+                            "type": "integer",
+                            "title": "The cust_app_id schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": 0,
+                            "examples": [
+                                24512
+                            ]
+                        },
+                        "hcah": {
+                            "$id": "#/properties/user_info/properties/app/properties/hcah",
+                            "type": "object",
+                            "title": "The hcah schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": {},
+                            "examples": [
+                                {
+                                    "account": "10435678",
+                                    "token": "9464c2441872719fd8789d54e8e666443ed53e16a71f59e1e82a16fffd14052c"
+                                }
+                            ],
+                            "required": [
+                                "account",
+                                "token"
+                            ],
+                            "properties": {
+                                "account": {
+                                    "$id": "#/properties/user_info/properties/app/properties/hcah/properties/account",
+                                    "type": "string",
+                                    "title": "The account schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": "",
+                                    "examples": [
+                                        "10435678"
+                                    ]
+                                },
+                                "token": {
+                                    "$id": "#/properties/user_info/properties/app/properties/hcah/properties/token",
+                                    "type": "string",
+                                    "title": "The token schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": "",
+                                    "examples": [
+                                        "9464c2441872719fd8789d54e8e666443ed53e16a71f59e1e82a16fffd14052c"
+                                    ]
+                                }
+                            },
+                            "additionalProperties": true
+                        }
+                    },
+                    "additionalProperties": true
+                },
+                "coins": {
+                    "$id": "#/properties/user_info/properties/coins",
+                    "type": "object",
+                    "title": "The coins schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": {},
+                    "examples": [
+                        {
+                            "available": 0,
+                            "text": {
+                                "earn": "You have earned :HCAH_COINS: coins by using the :HCAH_ACTIVITY:",
+                                "redeem": "You have redeemed :HCAH_COINS: coins for this :HCAH_ACTIVITY:"
+                            }
+                        }
+                    ],
+                    "required": [
+                        "available",
+                        "text"
+                    ],
+                    "properties": {
+                        "available": {
+                            "$id": "#/properties/user_info/properties/coins/properties/available",
+                            "type": "integer",
+                            "title": "The available schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": 0,
+                            "examples": [
+                                0
+                            ]
+                        },
+                        "text": {
+                            "$id": "#/properties/user_info/properties/coins/properties/text",
+                            "type": "object",
+                            "title": "The text schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": {},
+                            "examples": [
+                                {
+                                    "earn": "You have earned :HCAH_COINS: coins by using the :HCAH_ACTIVITY:",
+                                    "redeem": "You have redeemed :HCAH_COINS: coins for this :HCAH_ACTIVITY:"
+                                }
+                            ],
+                            "required": [
+                                "earn",
+                                "redeem"
+                            ],
+                            "properties": {
+                                "earn": {
+                                    "$id": "#/properties/user_info/properties/coins/properties/text/properties/earn",
+                                    "type": "string",
+                                    "title": "The earn schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": "",
+                                    "examples": [
+                                        "You have earned :HCAH_COINS: coins by using the :HCAH_ACTIVITY:"
+                                    ]
+                                },
+                                "redeem": {
+                                    "$id": "#/properties/user_info/properties/coins/properties/text/properties/redeem",
+                                    "type": "string",
+                                    "title": "The redeem schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": "",
+                                    "examples": [
+                                        "You have redeemed :HCAH_COINS: coins for this :HCAH_ACTIVITY:"
+                                    ]
+                                }
+                            },
+                            "additionalProperties": true
+                        }
+                    },
+                    "additionalProperties": true
+                },
+                "programs": {
+                    "$id": "#/properties/user_info/properties/programs",
+                    "type": "array",
+                    "title": "The programs schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": [],
+                    "examples": [
+                        [
+                            {
+                                "code": "LIPAGLYN",
+                                "service": "LIPAGLYN",
+                                "program_id": 2,
+                                "organization": "LIPAGLYN"
+                            }
+                        ]
+                    ],
+                    "additionalItems": true,
+                    "items": {
+                        "$id": "#/properties/user_info/properties/programs/items",
+                        "anyOf": [
+                            {
+                                "$id": "#/properties/user_info/properties/programs/items/anyOf/0",
+                                "type": "object",
+                                "title": "The first anyOf schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": {},
+                                "examples": [
+                                    {
+                                        "code": "LIPAGLYN",
+                                        "service": "LIPAGLYN",
+                                        "program_id": 2,
+                                        "organization": "LIPAGLYN"
+                                    }
+                                ],
+                                "required": [
+                                    "code",
+                                    "service",
+                                    "program_id",
+                                    "organization"
+                                ],
+                                "properties": {
+                                    "code": {
+                                        "$id": "#/properties/user_info/properties/programs/items/anyOf/0/properties/code",
+                                        "type": "string",
+                                        "title": "The code schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "LIPAGLYN"
+                                        ]
+                                    },
+                                    "service": {
+                                        "$id": "#/properties/user_info/properties/programs/items/anyOf/0/properties/service",
+                                        "type": "string",
+                                        "title": "The service schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "LIPAGLYN"
+                                        ]
+                                    },
+                                    "program_id": {
+                                        "$id": "#/properties/user_info/properties/programs/items/anyOf/0/properties/program_id",
+                                        "type": "integer",
+                                        "title": "The program_id schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": 0,
+                                        "examples": [
+                                            2
+                                        ]
+                                    },
+                                    "organization": {
+                                        "$id": "#/properties/user_info/properties/programs/items/anyOf/0/properties/organization",
+                                        "type": "string",
+                                        "title": "The organization schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "LIPAGLYN"
+                                        ]
+                                    }
+                                },
+                                "additionalProperties": true
+                            }
+                        ]
+                    }
+                },
+                "chat_profiles": {
+                    "$id": "#/properties/user_info/properties/chat_profiles",
+                    "type": "object",
+                    "title": "The chat_profiles schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": {},
+                    "examples": [
+                        {
+                            "specialist": [],
+                            "bot": {
+                                "link": "https://c3.avaamo.com/web_channels/s-t-e78e670c-060e-4f21-9a18-46a9f3061b48/channel.html?theme=avm-blue",
+                                "type": 0
+                            }
+                        }
+                    ],
+                    "required": [
+                        "specialist",
+                        "bot"
+                    ],
+                    "properties": {
+                        "specialist": {
+                            "$id": "#/properties/user_info/properties/chat_profiles/properties/specialist",
+                            "type": "array",
+                            "title": "The specialist schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": [],
+                            "examples": [
+                                []
+                            ],
+                            "additionalItems": true,
+                            "items": {
+                                "$id": "#/properties/user_info/properties/chat_profiles/properties/specialist/items"
+                            }
+                        },
+                        "bot": {
+                            "$id": "#/properties/user_info/properties/chat_profiles/properties/bot",
+                            "type": "object",
+                            "title": "The bot schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": {},
+                            "examples": [
+                                {
+                                    "link": "https://c3.avaamo.com/web_channels/s-t-e78e670c-060e-4f21-9a18-46a9f3061b48/channel.html?theme=avm-blue",
+                                    "type": 0
+                                }
+                            ],
+                            "required": [
+                                "link",
+                                "type"
+                            ],
+                            "properties": {
+                                "link": {
+                                    "$id": "#/properties/user_info/properties/chat_profiles/properties/bot/properties/link",
+                                    "type": "string",
+                                    "title": "The link schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": "",
+                                    "examples": [
+                                        "https://c3.avaamo.com/web_channels/s-t-e78e670c-060e-4f21-9a18-46a9f3061b48/channel.html?theme=avm-blue"
+                                    ]
+                                },
+                                "type": {
+                                    "$id": "#/properties/user_info/properties/chat_profiles/properties/bot/properties/type",
+                                    "type": "integer",
+                                    "title": "The type schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": 0,
+                                    "examples": [
+                                        0
+                                    ]
+                                }
+                            },
+                            "additionalProperties": true
+                        }
+                    },
+                    "additionalProperties": true
+                }
+            },
+            "additionalProperties": true
+        },
+        "splash": {
+            "$id": "#/properties/splash",
+            "type": "object",
+            "title": "The splash schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+                {
+                    "text": {
+                        "top": "Welcome to Aadhar!",
+                        "bottom": ""
+                    },
+                    "background": {
+                        "color": "#ffffff",
+                        "image": ""
+                    },
+                    "logo": ""
+                }
+            ],
+            "required": [
+                "text",
+                "background",
+                "logo"
+            ],
+            "properties": {
+                "text": {
+                    "$id": "#/properties/splash/properties/text",
+                    "type": "object",
+                    "title": "The text schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": {},
+                    "examples": [
+                        {
+                            "top": "Welcome to Aadhar!",
+                            "bottom": ""
+                        }
+                    ],
+                    "required": [
+                        "top",
+                        "bottom"
+                    ],
+                    "properties": {
+                        "top": {
+                            "$id": "#/properties/splash/properties/text/properties/top",
+                            "type": "string",
+                            "title": "The top schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "Welcome to Aadhar!"
+                            ]
+                        },
+                        "bottom": {
+                            "$id": "#/properties/splash/properties/text/properties/bottom",
+                            "type": "string",
+                            "title": "The bottom schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                ""
+                            ]
+                        }
+                    },
+                    "additionalProperties": true
+                },
+                "background": {
+                    "$id": "#/properties/splash/properties/background",
+                    "type": "object",
+                    "title": "The background schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": {},
+                    "examples": [
+                        {
+                            "color": "#ffffff",
+                            "image": ""
+                        }
+                    ],
+                    "required": [
+                        "color",
+                        "image"
+                    ],
+                    "properties": {
+                        "color": {
+                            "$id": "#/properties/splash/properties/background/properties/color",
+                            "type": "string",
+                            "title": "The color schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "#ffffff"
+                            ]
+                        },
+                        "image": {
+                            "$id": "#/properties/splash/properties/background/properties/image",
+                            "type": "string",
+                            "title": "The image schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                ""
+                            ]
+                        }
+                    },
+                    "additionalProperties": true
+                },
+                "logo": {
+                    "$id": "#/properties/splash/properties/logo",
+                    "type": "string",
+                    "title": "The logo schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        ""
+                    ]
+                }
+            },
+            "additionalProperties": true
+        },
+        "benefit_pdf": {
+            "$id": "#/properties/benefit_pdf",
+            "type": "string",
+            "title": "The benefit_pdf schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "public/program_code/pdf_details/lipaglyn_benefits_optimized1593173707.pdf"
+            ]
+        }
+    },
+    "additionalProperties": true
+}
