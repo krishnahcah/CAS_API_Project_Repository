@@ -36,7 +36,7 @@ public interface FrameworkConstants {
 	public static final String VerifyOTP_InvalidOTP_Error_Message="Invalid OTP";
 	
 	// Input Data...
-	public static final String Valid_Mobile_Info ="8860005106";
+	public static final String Valid_Mobile_Info ="9818625875";
 	public static final String Invalid_Mobile_Info_Empty ="";
 	public static final String Invalid_Mobile_Info ="666666";
 	public static final String Valid_Mobile_OTP ="456456";
@@ -55,15 +55,15 @@ public interface FrameworkConstants {
 	// Headers Information...
 	
 	public static final String Header_Text_HTML_Info ="text/html; charset=UTF-8";
-	public static final String Header_Connection_Info ="Keep-Alive";
-	public static final String Header_Server_Apache_Info ="Apache/2.4.46 (Amazon) OpenSSL/1.0.2k-fips PHP/7.3.23";
+	public static final String Header_Connection_Info ="keep-alive";
+	public static final String Header_Server_Apache_Info ="Apache";
 	public static final String Header_ContentType_JSON_Info ="application/json";
 	public static final String Header_Close_Connection_Info="close";
 	public static final String Header_Content_Encoding_Info="gzip";
 	public static final String Header_Vary_Info ="Authorization";
 	public static final String Header_Vary_Accept_Encoding_Info ="Accept-Encoding";
 	
-	public static final String Valid_Authorization="Bearer 1255|t3yOoarbtZW42UmJSYcgwOf83C8b7EVDpWGUQ1wY";
+	public static final String Valid_Authorization="Bearer 7911|4DPO2X4GKglAvYYFvNiviFKwYCvE5uHvzlF1I21h";
 	public static final String Invalid_Authorization="Bearer wrongauth";
 	
 }
