@@ -31,6 +31,7 @@ public class RestUtilities {
         RequestSpecification requestSpecification=given();
         requestSpecification.contentType(ContentType.JSON);
         Response response=requestSpecification.get(uRI);
+        System.out.println("End point is: "+uRI);
         requestSpecification.get(uRI).then().and().time(lessThan(1000L));
         System.out.println("Response time is: "+requestSpecification.get(uRI).then().extract().time());
         return response;
@@ -40,7 +41,9 @@ public class RestUtilities {
         RequestSpecification requestSpecification=given();
         requestSpecification.contentType(ContentType.JSON);
         requestSpecification.header("Authorization",Authorization);
+        System.out.println("Authorization is: "+Authorization);
         Response response=requestSpecification.get(uRI);
+        System.out.println("End point is: "+uRI);
         requestSpecification.get(uRI).then().and().time(lessThan(3000L));
         System.out.println("Response time is: "+requestSpecification.get(uRI).then().extract().time());
         return response;
@@ -50,7 +53,9 @@ public class RestUtilities {
         RequestSpecification requestSpecification=given();
         requestSpecification.contentType(ContentType.JSON);
         requestSpecification.body(payload);
+        System.out.println("Payload is: "+payload);
         Response response=requestSpecification.post(uRI);
+        System.out.println("End point is: "+uRI);
         requestSpecification.get(uRI).then().and().time(lessThan(1000L));
         System.out.println("Response time is: "+requestSpecification.get(uRI).then().extract().time());
         return response;

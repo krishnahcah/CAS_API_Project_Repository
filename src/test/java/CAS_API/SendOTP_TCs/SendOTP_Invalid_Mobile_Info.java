@@ -6,6 +6,7 @@ import baseTest.BaseTest;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.relevantcodes.extentreports.LogStatus;
 import org.json.JSONObject;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 import utils.FrameworkConstants;
 import utils.RestUtilities;
@@ -17,7 +18,7 @@ public class SendOTP_Invalid_Mobile_Info extends BaseTest {
 
     Map<String, String> requestParams = new HashMap<String,String>();
 
-    @Test
+    @Test(invocationCount = 1)
     public void CheckResponseWithInvalidMobileNumber() throws JsonProcessingException
     {
 
@@ -41,9 +42,9 @@ public class SendOTP_Invalid_Mobile_Info extends BaseTest {
 
         // validate response Keys for validation
         test.log(LogStatus.INFO, "Checking response Keys for validation...");
-        APIBasicValidation.getKey(new JSONObject(response.asString()),"error");
-        APIBasicValidation.getKey(new JSONObject(response.asString()),"message");
-        APIBasicValidation.getKey(new JSONObject(response.asString()),"code");
+        Assert.assertNotNull(APIBasicValidation.getKey(new JSONObject(response.asString()),"error"));
+        Assert.assertNotNull(APIBasicValidation.getKey(new JSONObject(response.asString()),"message"));
+        Assert.assertNotNull(APIBasicValidation.getKey(new JSONObject(response.asString()),"code"));
 
         test.log(LogStatus.INFO, " >>> TC-"+Thread.currentThread().getStackTrace()[1] .getMethodName()+" Ended... <<< ");
 

@@ -128,12 +128,12 @@ public class APIBasicValidation extends ExtentReportListener {
 		}
 	}
 
-	public static void getKey(JSONObject json, String key) {
+	public static String getKey(JSONObject json, String key) {
 
 		boolean exists = json.has(key);
 		Iterator<?> keys;
 		String nextKeys;
-
+		String jsonarrayString="";
 		if (!exists) {
 			keys = json.keys();
 			while (keys.hasNext()) {
@@ -149,7 +149,7 @@ public class APIBasicValidation extends ExtentReportListener {
 					} else if (json.get(nextKeys) instanceof JSONArray) {
 						JSONArray jsonarray = json.getJSONArray(nextKeys);
 						for (int i = 0; i < jsonarray.length(); i++) {
-							String jsonarrayString = jsonarray.get(i).toString();
+							jsonarrayString = jsonarray.get(i).toString();
 							JSONObject innerJSOn = new JSONObject(jsonarrayString);
 
 							if (exists == false) {
@@ -170,6 +170,7 @@ public class APIBasicValidation extends ExtentReportListener {
 			parseObject(json, key);
 		}
 
+		return jsonarrayString;
 	}
 	
 	public void response_equals(Response response,Map<String,String> responseFields){

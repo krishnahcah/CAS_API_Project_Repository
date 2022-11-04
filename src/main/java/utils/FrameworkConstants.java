@@ -63,7 +63,7 @@ public interface FrameworkConstants {
 	public static final String Header_Vary_Info ="Authorization";
 	public static final String Header_Vary_Accept_Encoding_Info ="Accept-Encoding";
 	
-	public static final String Valid_Authorization="Bearer 7911|4DPO2X4GKglAvYYFvNiviFKwYCvE5uHvzlF1I21h";
+	public static final String Valid_Authorization="Bearer 7941|mGfkdqZucuDO2tqlKfK8jVnXZ04M8aFG8Yy7ElsV";
 	public static final String Invalid_Authorization="Bearer wrongauth";
 	
 }

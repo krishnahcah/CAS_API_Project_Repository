@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Regression Suite">
+
+	<test name="Regression TCs">
+		<classes>
+            <!-- SEND OTP -->
+			<class name="CAS_API.SendOTP_TCs.SendOPT_Valid_Mobile_Info" />
+			<class name="CAS_API.SendOTP_TCs.SendOTP_Invalid_Mobile_Info" />
+			<class name="CAS_API.SendOTP_TCs.SendOPT_Empty_Mobile_Info" />
+
+
+
+			</classes>
+	</test>
+</suite>
